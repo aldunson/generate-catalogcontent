@@ -1,0 +1,1281 @@
++-----------------------------------------------------------------------+
+| Templat                                                               |
+| e Guidance Delete this instructional cover sheet page before sending! |
++=======================================================================+
+| About this template                                                   |
+|                                                                       |
+| The Leading-Edge Delivery template is for engagements (projects)      |
+| intending to follow a scrum development process with a fixed          |
+| capacity, fixed duration, and variable scope, in alignment with the   |
+| Domains’ playbooks. If your engagement has fixed scope or fixed       |
+| deliverables, or if your engagement is staff augmentation, then this  |
+| is not the right template.                                            |
+|                                                                       |
+| This Engagement Delivery Approach (EDA) is not an exhaustive list of  |
+| how we deliver agile development engagements. It is not intended to   |
+| be a sales tool, nor does it instruct development teams on how to     |
+| deliver engagements. The intent of this contract is to set Customer   |
+| expectations on the processes for how Microsoft delivers an           |
+| engagement, sets up governance, and the organizational structure used |
+| during an engagement.                                                 |
+|                                                                       |
+| For details on how to deliver engagements, see the Services Domains’  |
+| playbooks. Also refer to the Agile SOW Companion deck for background  |
+| information on selling and delivering agile deals.                    |
++-----------------------------------------------------------------------+
+| How to use this template                                              |
+|                                                                       |
+| You will notice throughout this document:                             |
+|                                                                       |
+| -   Pink text, in the body of the EDA is instructional and must be    |
+|     deleted before sending to the Customer.                           |
+|                                                                       |
+| -   Blue text, in the body of EDA represents optional scope and must  |
+|     be removed or un-bolded and changed to style ‘normal’ (black      |
+|     type) before sending to the Customer.                             |
+|                                                                       |
+| Before you send the document to the customer, make sure you:          |
+|                                                                       |
+| -   Refresh the table of contents.                                    |
+|                                                                       |
+| -   Updates the Document Properties.                                  |
+|                                                                       |
+| -   Check for Spelling issues.                                        |
+|                                                                       |
+| This document should be attached to an Enterprise Services Work Order |
+| anytime the Cloud Transformation Service or Data Estate Modernization |
+| SKU description of services is used.                                  |
++-----------------------------------------------------------------------+
+| Country-specific Considerations?                                      |
+|                                                                       |
+| For contracts in Germany, Austria, and Switzerland:                   |
+|                                                                       |
+| -   This EDA template is acceptable for use as a Services Contract    |
+|       (Austrian “Beratungsleistung” §§ 1153 ff. ABGB, German          |
+|       “Dienstleistung” §§ 611 ff. German Civil Code BGB, or Swiss     |
+|       “Einfacher Auftrag” Art. 394 et seqq. Swiss Code of             |
+|       Obligations). Reason: there is no acceptance process, nothing   |
+|       requires acceptance, we do not describe deliverables.           |
+|                                                                       |
+| -   Engage SQA if the related Description of Services commits to      |
+|       deliverables, fixed scope, outcome or similar.                  |
++-----------------------------------------------------------------------+
+| Need help?                                                            |
+|                                                                       |
+| -   If you have a contracting question, please reference the          |
+|     materials on K360 or, for general field support questions, reach  |
+|     out for assistance through AnswersHub.                            |
+|                                                                       |
+| -   If you would like to request a change to this template, please    |
+|     log the request on K360.                                          |
++-----------------------------------------------------------------------+
+
+Prepared for:
+
+Enter Customer name
+
+Prepared by:
+
+Microsoft | Enter the author(s)
+
+Date: enter ESWO date here
+
+Version: 1.2
+
+Table of contents
+
+1. Introduction 1
+
+2. Definitions and acronyms 1
+
+3. Engagement delivery approach 3
+
+3.1. Sprint process 3
+
+3.2. Engagement initiation 4
+
+3.3. Product baseline planning 5
+
+3.4. Delivery sprints 6
+
+3.5. Defect remediation 7
+
+3.6. Completion and Definition of Done 7
+
+4. Engagement organization 7
+
+4.1. Executive steering committee 7
+
+4.2. Product council 8
+
+4.3. Feature team 10
+
+5. Engagement governance 12
+
+5.1. Engagement communication 12
+
+5.2. Risk and issue management 13
+
+5.3. Change management process 13
+
+5.4. Escalation path 13
+
+6. Customer responsibilities and engagement assumptions 13
+
+6.1. Customer responsibilities 13
+
+6.2. Engagement assumptions 14
+
+[READ AND DELETE: PLEASE NOTE
+
+THIS TEMPLATE IS USED FOR CATALOG, NON-CUSTOMIZED, CONSULTING
+
+OFFERS THAT ARE IN THE CATALOG AND AVAILABLE IN COMPASSONE.
+
+CUSTOM OFFERS WILL BE TREATED AS NON-MSO (MANAGED STANDARD OFFERING)
+
+AND WILL REQUIRE THE APPROPRIATE LEVEL OF REVIEW AS DERIVED THROUGH THE
+
+ENTERPRISE SERVICES AUTHORIZATION POLICY (ESAP)]
+
+Introduction
+
+This document describes how Microsoft (“us,” “we”, “our”) will engage
+with [insert Customer Legal Name] (“[Customer Short Name if available]”,
+“Customer,” “you,” “your”) during engagements. It outlines our approach
+to agile-based delivery, governance, organizational, team structures,
+and the responsibilities and assumptions associated with the delivery of
+our services.
+
+This document is attached to Work Order (WO) [insert Work Order number].
+
+Definitions and acronyms
+
+The following table lists terms, and acronyms used in this document.
+
++-------------------+--------------------------------------------------+
+| Term/acronym      | Description                                      |
++===================+==================================================+
+| Backlog           | The set of epics, features, and user stories     |
+|                   | that are prioritized and assigned to resources   |
+|                   | during sprints to direct the effort of the       |
+|                   | feature teams to work toward the Customer        |
+|                   | outcomes and desired business value.             |
++-------------------+--------------------------------------------------+
+| BWBM              | Black and white box monitoring.                  |
+|                   |                                                  |
+|                   | -   Blackbox monitoring: testing externally      |
+|                   |     visible behavior as a user would see it.     |
+|                   |                                                  |
+|                   | -   Whitebox monitoring: monitoring based on     |
+|                   |     metrics exposed by the internals of the      |
+|                   |     system, including logs, interfaces (like the |
+|                   |     Java virtual machine profiling interface),   |
+|                   |     or an HTTP handler that emits internal       |
+|                   |     statistics.                                  |
++-------------------+--------------------------------------------------+
+| DOD               | Definition of Done                               |
++-------------------+--------------------------------------------------+
+| DOR               | Definition of Ready                              |
++-------------------+--------------------------------------------------+
+| Horizon-based     | A multi-phased long-term strategy (typically     |
+| delivery          | three phases) that spans multiple engagements    |
+|                   | and maps out an implementation plan for the      |
+|                   | Customer.                                        |
++-------------------+--------------------------------------------------+
+| Informal          | The exchange of information between Microsoft    |
+| knowledge         | staff and the Customer staff as they work        |
+| transfer          | together on the engagement.                      |
++-------------------+--------------------------------------------------+
+| MC                | Migration coordinator. The role assigned to lead |
+|                   | a feature team. Responsibilities are outlined in |
+|                   | the Feature team section of this document.       |
++-------------------+--------------------------------------------------+
+| OKRs              | Objectives and key results. A set of measurable  |
+|                   | goals and metrics used to track progress toward  |
+|                   | reaching valued business outcomes.               |
++-------------------+--------------------------------------------------+
+| ORC               | Operational readiness criteria. Criteria used in |
+|                   | the review where customers have a base set of    |
+|                   | monitors, logs, runbooks, user acceptance        |
+|                   | testing, security, and scans needed to place a   |
+|                   | service into use (“production readiness          |
+|                   | review”). Services deemed business critical also |
+|                   | include availability and reliability             |
+|                   | measurements (availability and serviceability,   |
+|                   | at a higher level).                              |
++-------------------+--------------------------------------------------+
+| PBI               | Product backlog item. An item tracked in DevOps. |
+|                   | Also known as a “work item.” Typically, these    |
+|                   | items can be individual tasks, stories, epics,   |
+|                   | features, or other custom items as defined for a |
+|                   | particular engagement.                           |
++-------------------+--------------------------------------------------+
+| Product increment | Depending on the type of engagement, a “product  |
+|                   | increment” can be any combination of the         |
+|                   | following (but not limited to): documentation of |
+|                   | standards, policies, and procedures; landing     |
+|                   | zones; security templates; operational           |
+|                   | playbooks; or user stories completed within a    |
+|                   | sprint.                                          |
++-------------------+--------------------------------------------------+
+| SLI               | Service-level indicator                          |
++-------------------+--------------------------------------------------+
+| SLO               | Service-level objective                          |
++-------------------+--------------------------------------------------+
+| SME               | Subject matter expert. A person with specific    |
+|                   | knowledge or expertise in a particular area. For |
+|                   | example, a security SME, or database SME.        |
++-------------------+--------------------------------------------------+
+| Sprint planning   | A single meeting held at the start of each       |
+|                   | sprint to review and assign PBIs that meet DOR   |
+|                   | and will be delivered during the sprint. In some |
+|                   | exceptional cases, planning may extend past the  |
+|                   | first day. The MC and feature team will attend,  |
+|                   | along with key stakeholders.                     |
++-------------------+--------------------------------------------------+
+| Sprint            | A single meeting held at the end of each sprint  |
+| retrospective     | to give the feature team an opportunity to       |
+|                   | review its performance and implement             |
+|                   | improvements for subsequent sprints. Identified  |
+|                   | improvements can be enacted during subsequent    |
+|                   | sprints. The feature team will attend with key   |
+|                   | stakeholders, if desired.                        |
++-------------------+--------------------------------------------------+
+| Sprint review     | A single meeting held at the end of each sprint  |
+|                   | to evaluate the progress and update the product  |
+|                   | backlog, if needed. The MC and feature team will |
+|                   | attend along with key stakeholders.              |
++-------------------+--------------------------------------------------+
+| Validation        | Testing conducted by the Customer to validate a  |
+| testing           | completed story meets the requirements specified |
+|                   | by its DOD.                                      |
++-------------------+--------------------------------------------------+
+
+Engagement delivery approach
+
+Microsoft engagements use an agile approach based on the scrum framework
+for delivery. The goal of each delivery sprint is a product increment
+that can be released into production (see explanation of “product
+increment” in the Definitions and acronyms section). If applicable,
+Microsoft and the Customer will work together to build a repeatable
+release capability with the goal of having the initial release of value
+within a mutually agreeable timeline.
+
+The Microsoft delivery approach assumes the use of Azure DevOps as a
+cross-functional work planning and management tool for managing the
+delivery processes defined within this document.
+
+Sprint process
+
+Microsoft will undertake an iterative delivery approach that is based on
+a fixed-capacity, fixed-duration, variable-scope process known as the
+scrum process (http://scrumguides.org). The key tenets are:
+
+-   Joint ownership of decisions.
+
+-   Short implementation units (sprints).
+
+-   Prioritization of business and technical debt objectives in a
+    product backlog.
+
+-   Time-bound planning for each sprint.
+
+-   Emphasis on the remaining work.
+
+-   Sprints that produce a releasable product increment.
+
+-   Sprint demonstrations that are time-restricted and have regular
+    checkpoints.
+
+-   Automation approach and pipeline strategy
+
+-   Zero downtime deployment strategy
+
+-   Retrospective meetings that may be used for course correction.
+
+    [Sprint Process Moving from left to right: first a series of blocks
+    representing product backlog items. To its right a smaller set of
+    blocks that represent a sprint backlog list. That feeds into an
+    arrow shaped like a counter clock-wise circle that has the following
+    phases: Planning, Implementation, Review, and Restrospective that
+    represent the sprint cycle. Spinning off of the implementation phase
+    is a smaller clock-wise circle shaped arrow that represents the
+    daily scrum. Near the section for the retrospective, there is a list
+    of completed features. Finally on the far right of the graphic there
+    is a series of blocks that have checkmarks in them representing
+    completed product that has been delivered.]
+
+At the end of each sprint, the MC and applicable Customer decision
+makers will review the progress made against the objectives to determine
+if any adjustments are needed using the change management process.
+
+Engagement initiation
+
+At the beginning of the engagement, the following tasks need to be
+completed before the start of product baseline planning.
+
++---------------+------------------------------------------------------+
+| Category      | Description                                          |
++===============+======================================================+
+| Microsoft     | -   Conduct a pre-initiation call or meeting to      |
+| activities    |     initiate team formation and communicate          |
+| The           |     expectations.                                    |
+| activities to |                                                      |
+| be performed  | -   Document the engagement launch prerequisites.    |
+| by Microsoft  |                                                      |
+|               | -   Track the status of launch prerequisites and     |
+|               |     adjust the start date for product baseline       |
+|               |     planning accordingly.                            |
+|               |                                                      |
+|               | -   Conduct a detailed walk-through of the contract  |
+|               |     with the Customer to agree on an initial         |
+|               |     engagement schedule and approach.                |
+|               |                                                      |
+|               | -   Help the Customer identify the required roles    |
+|               |     and stakeholders and names for the initial       |
+|               |     feature teams.                                   |
+|               |                                                      |
+|               | -   Initiate orientation of Microsoft resources into |
+|               |     the Customer environment.                        |
++---------------+------------------------------------------------------+
+| Customer      | -   Attend and participate in the pre-initiation     |
+| activities    |     call.                                            |
+| The           |                                                      |
+| activities to | -   Assign engagement initiation and launch          |
+| be performed  |     prerequisite responsibilities to accountable     |
+| by the        |     Customer leadership and establish target         |
+| Customer      |     completion dates.                                |
+|               |                                                      |
+|               | -   Attend the engagement initiation and complete    |
+|               |     launch prerequisites.                            |
+|               |                                                      |
+|               | -   Staff the engagement with the required Customer  |
+|               |     personnel in the time frames agreed upon in the  |
+|               |     pre-initiation call.                             |
+|               |                                                      |
+|               | -   Own and complete any orientation requirements    |
+|               |     for Microsoft resources within the Customer      |
+|               |     environment.                                     |
++---------------+------------------------------------------------------+
+
+Product baseline planning
+
+The feature team will conduct product baseline planning during a
+mutually agreed-upon time frame to build out the initial product backlog
+and high-level architecture. At the completion of this exercise, the
+outcomes, assumptions, and dependencies will be verified.
+
+Should there be any material deviations from the initial estimated
+capacity, these and their implications will be discussed. Any changes
+will be addressed through the change management process.
+
++---------------+------------------------------------------------------+
+| Category      | Description                                          |
++===============+======================================================+
+| Microsoft     | -   Work with the Customer to identify the           |
+| activities    |     stakeholders and SMEs that will function as a    |
+| The           |     feature team.                                    |
+| activities to |                                                      |
+| be performed  | -   Conduct workshops as required with the Customer  |
+| by Microsoft  |     stakeholders and SMEs.                           |
+|               |                                                      |
+|               | -   Collaborate with the Customer to:                |
+|               |                                                      |
+|               |     -   Determine sprint duration and sprint         |
+|               |           capacity.                                  |
+|               |                                                      |
+|               |     -   Review the desired outcomes and define OKRs. |
+|               |                                                      |
+|               |     -   Create a problem statement by defining the   |
+|               |           goal for the overall solution.             |
+|               |                                                      |
+|               |     -   Create vision statements by defining         |
+|               |           functional or behavioral requirements for  |
+|               |           the overall solution.                      |
+|               |                                                      |
+|               |     -   Define personas and user journeys by         |
+|               |           determining how users currently operate,   |
+|               |           and how they plan to operate going         |
+|               |           forward.                                   |
+|               |                                                      |
+|               |     -   Define epics and features by creating a      |
+|               |           workstream broken down into subtopics and  |
+|               |           action items.                              |
+|               |                                                      |
+|               |     -   Define SLOs, SLIs, DOR, DOD, ORC and BWBM.   |
+|               |                                                      |
+|               | -   Collaborate with the MC to create a proposed     |
+|               |     backlog, including non-functional requirements   |
+|               |     for the first release and a set of user stories  |
+|               |     ready for sizing, design, and development.       |
+|               |                                                      |
+|               | -   Identify impediments to efficient development,   |
+|               |     including areas that require more elaboration,   |
+|               |     like proofs of concept or other architectural    |
+|               |     discovery tasks.                                 |
++---------------+------------------------------------------------------+
+| Customer      | -   Determine who is responsible for environment set |
+| activities    |     up and operations.                               |
+| The           |                                                      |
+| activities to | -   Identify a solution owner or sponsor who is      |
+| be performed  |     empowered to make business prioritization        |
+| by the        |     decisions and act as a single point of contact   |
+| Customer      |     for questions about requirements.                |
+|               |                                                      |
+|               | -   Identify the Customer team members who will be   |
+|               |     available for the duration of the engagement.    |
+|               |                                                      |
+|               | -   Allocate roles to be filled by the Customer.     |
+|               |                                                      |
+|               | -   Attend and participate in the workshop sessions  |
+|               |     to define the user stories.                      |
+|               |                                                      |
+|               | -   Provide updated background information,          |
+|               |     documentation, and business requirements.        |
+|               |                                                      |
+|               | -   Help remove any impediments.                     |
+|               |                                                      |
+|               | -   Define a validation testing process.             |
+|               |                                                      |
+|               | -   Identify all security procedures and policies    |
+|               |     with which the Microsoft team must comply with   |
+|               |     and follow.                                      |
++---------------+------------------------------------------------------+
+| Key           | -   The Customer representatives (especially the     |
+| assumptions   |     solution owner or sponsor) will be available     |
+|               |     throughout the duration of the workshop.         |
+|               |                                                      |
+|               | -   Personnel assigned to key roles are available    |
+|               |     and knowledgeable about their product.           |
+|               |                                                      |
+|               | -   The backlog will be refined during product       |
+|               |     baseline planning, which may result in changes   |
+|               |     to the overall scope and changes to required     |
+|               |     capacity.                                        |
++---------------+------------------------------------------------------+
+
+Delivery sprints
+
+Each delivery sprint will last no longer than four weeks. The final
+duration for sprints will be determined in collaboration with the
+Customer during product baseline planning. A typical list of activities
+is provided below. Microsoft and the Customer will review delivered
+outcomes after every sprint to determine whether updates are needed to
+the backlog or outcomes.
+
++---------------+------------------------------------------------------+
+| Category      | Description                                          |
++===============+======================================================+
+| Microsoft     | -   On the first day of the sprint, conduct sprint   |
+| activities    |     planning.                                        |
+| The           |                                                      |
+| activities to | -   Determine whether sufficient information is      |
+| be performed  |     available for each user story or PBI. An item    |
+| by Microsoft  |     will be flagged if more clarification is needed. |
+|               |     If clarification is not provided, it may be      |
+|               |     deferred to later sprints.                       |
+|               |                                                      |
+|               | -   Determine whether the PBIs assigned to a sprint  |
+|               |     can be completed within that sprint based on     |
+|               |     available capacity and interdependencies with    |
+|               |     other PBIs.                                      |
+|               |                                                      |
+|               | -   Conduct and participate in daily scrum meetings. |
+|               |                                                      |
+|               | -   Work collaboratively to design, plan and         |
+|               |     implement PBIs.                                  |
+|               |                                                      |
+|               | -   Create and perform unit, functional, and system  |
+|               |     tests.                                           |
+|               |                                                      |
+|               | -   Identify impediments to engagement delivery      |
+|               |     progress and how production incidents will be    |
+|               |     factored into delivery.                          |
+|               |                                                      |
+|               | -   Regularly update the remaining effort estimate   |
+|               |     for PBIs based on the development progress,      |
+|               |     dependencies, and architectural constraints or   |
+|               |     needs.                                           |
+|               |                                                      |
+|               | -   Explore external dependencies and determine      |
+|               |     approaches to handle mismatches in SLOs.         |
+|               |                                                      |
+|               | -   Review and refine the risk list.                 |
+|               |                                                      |
+|               | -   Mark PBIs completed that meet the defined DOD    |
+|               |     (done by the MC).                                |
+|               |                                                      |
+|               | -   Provide PBI completion and capacity burn down    |
+|               |     analysis in a weekly cadence to refine PBI       |
+|               |     assignments and help to optimize engineering     |
+|               |     resources.                                       |
+|               |                                                      |
+|               | -   At the end of a sprint, conduct a sprint review  |
+|               |     and sprint retrospective.                        |
++---------------+------------------------------------------------------+
+| Customer      | -   Attend and participate in daily scrum meetings,  |
+| activities    |     if necessary.                                    |
+| The           |                                                      |
+| activities to | -   Help refine PBIs and provide timely              |
+| be performed  |     clarifications.                                  |
+| by the        |                                                      |
+| Customer      | -   Provide updated background information,          |
+|               |     documentation, and business requirements.        |
+|               |                                                      |
+|               | -   Collaborate with Microsoft to update the product |
+|               |     backlog for future sprints.                      |
+|               |                                                      |
+|               | -   Help remove any impediments.                     |
+|               |                                                      |
+|               | -   Support the Microsoft team with deployments to   |
+|               |     the agreed-upon environments.                    |
+|               |                                                      |
+|               | -   Conduct validation testing on completed PBIs     |
+|               |     according to the validation testing cycle        |
+|               |     defined in the release plan.                     |
+|               |                                                      |
+|               | -   Identify repetitive items that can be handled    |
+|               |     via automation.                                  |
+|               |                                                      |
+|               | -   Attend the sprint review meetings and provide    |
+|               |     feedback.                                        |
++---------------+------------------------------------------------------+
+| Key           | -   Customer representatives will be available       |
+| assumptions   |     throughout the duration of the sprint.           |
+|               |                                                      |
+|               | -   The backlog will be updated as required in each  |
+|               |     sprint, which may result in changes to overall   |
+|               |     scope and changes to required capacity.          |
++---------------+------------------------------------------------------+
+
+Defect remediation
+
+If possible, defects found by the feature team during a delivery sprint
+are fixed within the sprint itself. Defects that cannot be resolved
+during the sprint will be added to the product backlog. Defects found
+elsewhere will be prioritized by the MC and become part of the product
+backlog.
+
+Completion and Definition of Done
+
+Sprints will end based on the calendar schedule defined during product
+baseline planning. At the conclusion of each sprint, feature teams will
+conduct a sprint review and sprint retrospective. During the sprint
+review, each feature team will demonstrate completed work. At the end of
+each sprint, Microsoft will provide a sprint completion report. Backlog
+items do not require formal sign-off or Customer acceptance when they
+are completed by the feature team.
+
+Engagement organization
+
+The following table shows the role descriptions and responsibilities for
+each area in the engagement organization. The capacity available for
+each Microsoft resource is specified in the WO. If more resource
+capacity of any role is needed, it can be added through the change
+management process.
+
+Executive steering committee
+
+The executive steering committee provides overall senior management
+oversight and strategic direction for the engagement. In addition, it
+removes obstacles for the engagement team. The executive steering
+committee for the engagement will meet per the frequency defined in the
+communication plan and will include the roles listed in the following
+table. Note, a person may assume more than one role (persona).
+
++------------+----------------------------------------+---------------+
+| Role       | Responsibilities/notes                 | Responsible   |
+|            |                                        | party         |
++============+========================================+===============+
+| Executive  | -   Participates in the executive      | Both Customer |
+| sponsor    |     steering committee.                | and Microsoft |
+|            |                                        |               |
+|            | -   Serves as a point of escalation to |               |
+|            |     support clearing engagement        |               |
+|            |     roadblocks.                        |               |
+|            |                                        |               |
+|            | -   Serves as a final arbiter of       |               |
+|            |     engagement issues.                 |               |
+|            |                                        |               |
+|            | -   Makes decisions about the          |               |
+|            |     engagement strategic direction.    |               |
+|            |                                        |               |
+|            | -   Approves significant change        |               |
+|            |     requests.                          |               |
++------------+----------------------------------------+---------------+
+| Engagement | -   Serves as the Customer single      | Customer      |
+| owner      |     point of contact and is            |               |
+|            |     accountable for the engagement.    |               |
+|            |                                        |               |
+|            | -   Interacts with executive sponsors  |               |
+|            |     from both the Customer and         |               |
+|            |     Microsoft.                         |               |
+|            |                                        |               |
+|            | -   Routinely engages with the         |               |
+|            |     Microsoft delivery management      |               |
+|            |     executive or program director.     |               |
+|            |                                        |               |
+|            | -   Works to eliminate the             |               |
+|            |     Customer-related issues hindering  |               |
+|            |     or impeding implementation.        |               |
++------------+----------------------------------------+---------------+
+| Program    | -   Oversees all service delivery      | Microsoft     |
+| manager    |     engagements with the Customer.     |               |
+|            |                                        |               |
+|            | -   Serves as an escalation point for  |               |
+|            |     delivery issues to Microsoft       |               |
+|            |     senior leadership.                 |               |
+|            |                                        |               |
+|            | -   Serves as the single point of      |               |
+|            |     contact and is accountable for     |               |
+|            |     service delivery.                  |               |
+|            |                                        |               |
+|            | -   Drives Customer satisfaction –     |               |
+|            |     both what is being delivered, and  |               |
+|            |     how it is being delivered.         |               |
+|            |                                        |               |
+|            | -   Leads engagement quality reviews   |               |
+|            |     with the Customer executive        |               |
+|            |     sponsor to assist with “conditions |               |
+|            |     of satisfaction.”                  |               |
+|            |                                        |               |
+|            | -   Oversees and coordinates the       |               |
+|            |     overall Microsoft engagement and   |               |
+|            |     delivers it on schedule.           |               |
+|            |                                        |               |
+|            | -   Takes responsibility for Microsoft |               |
+|            |     resource allocation, risk          |               |
+|            |     management, engagement priorities, |               |
+|            |     and communication to executive     |               |
+|            |     management.                        |               |
+|            |                                        |               |
+|            | -   Coordinates decisions within three |               |
+|            |     business days, or according to an  |               |
+|            |     otherwise agreed-upon timeline.    |               |
++------------+----------------------------------------+---------------+
+
+Product council
+
+The product council is the primary mechanism for aligning stakeholders
+and dealing with competing priorities. It acts as the forum where the
+strategy is agreed upon so that all key decision makers understand what
+decisions are being made about the direction of the product and why. The
+product council allows the feature teams to maintain autonomy while
+simultaneously determining the overall priorities for business outcomes.
+
+[]
+
+The product council is formed to define and share the product strategy
+and roadmap. It also makes decisions needed to resolve any conflicting
+product priorities.
+
+In addition to the roles listed below, all MCs and technical leads from
+the individual feature teams are also members of the product council.
+
++--------------+-----------------------------------+------------------+
+| Role         | Responsibilities/notes            | Responsible      |
+|              |                                   | party            |
++==============+===================================+==================+
+| Group        | -   Defines the product vision    | Microsoft        |
+| product      |     and strategy, including OKRs, |                  |
+| manager      |     to provide clarity, focus,    |                  |
+|              |     and alignment with strategic  |                  |
+|              |     Customer priorities and       |                  |
+|              |     desired business outcomes.    |                  |
+|              |                                   |                  |
+|              | -   Coordinates all activities to |                  |
+|              |     meet specific business        |                  |
+|              |     value-driven requirements.    |                  |
+|              |                                   |                  |
+|              | -   Coordinates with business     |                  |
+|              |     units for sponsorship and     |                  |
+|              |     budgeting.                    |                  |
+|              |                                   |                  |
+|              | -   Effectively communicates,     |                  |
+|              |     collaborates, and coordinates |                  |
+|              |     with all relevant IT and      |                  |
+|              |     business stakeholders.        |                  |
+|              |                                   |                  |
+|              | -   Establishes and maintains an  |                  |
+|              |     effective and functioning     |                  |
+|              |     internal sourcing and         |                  |
+|              |     feedback loop process to      |                  |
+|              |     gather and improve product    |                  |
+|              |     capabilities.                 |                  |
++--------------+-----------------------------------+------------------+
+| Engineering  | -   Sets the strategic direction  | Microsoft        |
+| manager      |     for architecture of the       |                  |
+|              |     products being developed.     |                  |
+|              |                                   |                  |
+|              | -   Facilitates alignment to      |                  |
+|              |     desired business outcomes and |                  |
+|              |     OKRs for all products.        |                  |
+|              |                                   |                  |
+|              | -   Leads the product council     |                  |
+|              |     from a technical perspective. |                  |
+|              |                                   |                  |
+|              | -   Serves as the technical       |                  |
+|              |     person responsible for user   |                  |
+|              |     story/PBI backlog decisions   |                  |
+|              |     during sprint planning and    |                  |
+|              |     defines validation criteria   |                  |
+|              |     for work items.               |                  |
+|              |                                   |                  |
+|              | -   Helps the MCs prioritize and  |                  |
+|              |     manage the product backlog.   |                  |
+|              |                                   |                  |
+|              | -   Facilitates conversations     |                  |
+|              |     between product stakeholders  |                  |
+|              |     so that the MCs can make      |                  |
+|              |     informed decisions.           |                  |
+|              |                                   |                  |
+|              | -   Collaborates with the         |                  |
+|              |     Customer to define the set of |                  |
+|              |     security and data protection  |                  |
+|              |     principles to which the       |                  |
+|              |     engagement must adhere.       |                  |
+|              |                                   |                  |
+|              | -   Reviews technical designs     |                  |
+|              |     from feature teams to         |                  |
+|              |     determine compliance.         |                  |
++--------------+-----------------------------------+------------------+
+| Project      | -   Oversees and coordinates the  | Customer         |
+| manager      |     overall engagement and        |                  |
+|              |     delivers it on schedule.      |                  |
+|              |                                   |                  |
+|              | -   Oversees the Customer         |                  |
+|              |     resource allocation, risk     |                  |
+|              |     management, engagement        |                  |
+|              |     priorities, and communication |                  |
+|              |     with executive management.    |                  |
+|              |                                   |                  |
+|              | -   Coordinates decisions within  |                  |
+|              |     three business days, or       |                  |
+|              |     according to an otherwise     |                  |
+|              |     agreed-upon timeline.         |                  |
+|              |                                   |                  |
+|              | -   Communicates the engagement   |                  |
+|              |     efforts and activities to the |                  |
+|              |     Customer executive committee  |                  |
+|              |     members and stakeholders.     |                  |
++--------------+-----------------------------------+------------------+
+| Business     | -   Provides direction on         | Customer         |
+| stakeholders |     business outcomes.            |                  |
+|              |                                   |                  |
+|              | -   Maintains communication with  |                  |
+|              |     Customer personnel assigned   |                  |
+|              |     to feature teams (for         |                  |
+|              |     example, SMEs).               |                  |
++--------------+-----------------------------------+------------------+
+
+Feature team
+
+Following the scrum model, Microsoft uses a feature team approach to
+deliver an engagement. All scrum roles will be represented within the
+feature team. This team is an autonomous and empowered unit that has all
+the capabilities to design, develop, test, and release features to
+achieve the Customer outcomes. A feature team consists of a MC,
+technical lead, SMEs, and engineers with various development, test,
+deployment, infrastructure, security, data, and operation skills.
+
+The roles listed below are typical and representative for feature teams,
+though they may differ, depending on the engagement. The skill sets of
+the engineers will also be different, depending on the engagement.
+
++-----------+-------------------------------------+-------------------+
+| Role      | Responsibilities/notes              | Responsible party |
++===========+=====================================+===================+
+| MC (an    | -   Takes responsibility for the    | Microsoft         |
+| ag        |     alignment with the strategy and |                   |
+| ile/scrum |     objectives communicated by the  |                   |
+| product   |     product council if one is       |                   |
+| owner     |     present in the engagement.      |                   |
+| plus      |                                     |                   |
+| a         | -   Manages and prioritizes the     |                   |
+| dditional |     product backlog.                |                   |
+| responsi  |                                     |                   |
+| bilities) | -   Serves as the primary person    |                   |
+|           |     responsible for user story/PBI  |                   |
+|           |     backlog decisions during sprint |                   |
+|           |     planning.                       |                   |
+|           |                                     |                   |
+|           | -   Serves as the single point of   |                   |
+|           |     contact for decisions about     |                   |
+|           |     PBIs and prioritization.        |                   |
+|           |                                     |                   |
+|           | -   Defines validation criteria for |                   |
+|           |     work items, especially user     |                   |
+|           |     stories.                        |                   |
+|           |                                     |                   |
+|           | -   Actively participates in all    |                   |
+|           |     sprint ceremonies.              |                   |
+|           |                                     |                   |
+|           | -   Takes responsibility for        |                   |
+|           |     planning validation testing.    |                   |
+|           |                                     |                   |
+|           | -   Serves as a member of the       |                   |
+|           |     product council if present.     |                   |
++-----------+-------------------------------------+-------------------+
+| Scrum     | -   Ensures the team follows a      | Microsoft         |
+| master    |     disciplined scrum process.      |                   |
+|           |                                     |                   |
+|           | -   Collaborate closely with the    |                   |
+|           |     Customer product owner to       |                   |
+|           |     manage the product backlog.     |                   |
+|           |                                     |                   |
+|           | -   Facilitate the daily standup.   |                   |
+|           |                                     |                   |
+|           | -   Help the team maintain their    |                   |
+|           |     burndown chart.                 |                   |
+|           |                                     |                   |
+|           | -   Set up retrospectives, sprint   |                   |
+|           |     reviews or sprint planning      |                   |
+|           |     sessions.                       |                   |
+|           |                                     |                   |
+|           | -   Shield the team from            |                   |
+|           |     interruptions during the        |                   |
+|           |     sprint.                         |                   |
+|           |                                     |                   |
+|           | -   Remove obstacles that affect    |                   |
+|           |     the team.                       |                   |
+|           |                                     |                   |
+|           | -   Walk the product owner through  |                   |
+|           |     more technical user stories.    |                   |
+|           |                                     |                   |
+|           | -   Encourage collaboration between |                   |
+|           |     the Scrum team and product      |                   |
+|           |     owner.                          |                   |
+|           |                                     |                   |
+|           | -   Coaching the team members in    |                   |
+|           |     self-management and             |                   |
+|           |     cross-functionality             |                   |
+|           |                                     |                   |
+|           | -   Helping the Scrum Team focus on |                   |
+|           |     creating high-value Increments  |                   |
+|           |     that meet the Definition of     |                   |
+|           |     Done.                           |                   |
+|           |                                     |                   |
+|           | -   Ensuring that all Scrum events  |                   |
+|           |     take place and are positive,    |                   |
+|           |     productive, and kept within the |                   |
+|           |     timebox.                        |                   |
++-----------+-------------------------------------+-------------------+
+| Technical | -   Partners with the Customer to   | Microsoft         |
+| lead      |     understand business needs and   |                   |
+|           |     solution requirements and       |                   |
+|           |     assists with technical          |                   |
+|           |     governance.                     |                   |
+|           |                                     |                   |
+|           | -   Helps evaluate implications of  |                   |
+|           |     trade-off decisions to          |                   |
+|           |     prioritize product backlog.     |                   |
+|           |                                     |                   |
+|           | -   Serves as a member of the       |                   |
+|           |     product council.                |                   |
+|           |                                     |                   |
+|           | -   Within the scope of a feature   |                   |
+|           |     team and for an individual      |                   |
+|           |     product, serves as the          |                   |
+|           |     technical person responsible    |                   |
+|           |     for user story/PBI decisions    |                   |
+|           |     during sprint planning and      |                   |
+|           |     defines validation criteria for |                   |
+|           |     work items.                     |                   |
+|           |                                     |                   |
+|           | -   Facilitates conversations       |                   |
+|           |     between various product         |                   |
+|           |     stakeholders so that the MC can |                   |
+|           |     make informed decisions.        |                   |
+|           |                                     |                   |
+|           | -   Facilitates DevOps              |                   |
+|           |     standardization (for example,   |                   |
+|           |     DevOps taxonomy and DevOps      |                   |
+|           |     principles and practices).      |                   |
+|           |                                     |                   |
+|           | -   Provides the Customer with      |                   |
+|           |     technical advice regarding the  |                   |
+|           |     Microsoft cloud.                |                   |
+|           |                                     |                   |
+|           | -   Reviews solution architecture   |                   |
+|           |     and design to identify          |                   |
+|           |     design-related security issues. |                   |
+|           |                                     |                   |
+|           | -   Reviews results of security     |                   |
+|           |     tests performed on a working    |                   |
+|           |     test environment.               |                   |
++-----------+-------------------------------------+-------------------+
+| Engineer  | -   Takes responsibility for        | Microsoft         |
+|           |     design, implementation, test,   |                   |
+|           |     and deployment to production    |                   |
+|           |     following DevOps principles.    |                   |
+|           |                                     |                   |
+|           | -   Participates in all sprint      |                   |
+|           |     reviews.                        |                   |
+|           |                                     |                   |
+|           | Note: The mix of feature team       |                   |
+|           | engineering skills may vary         |                   |
+|           | throughout the engagement,          |                   |
+|           | depending on work requirements.     |                   |
++-----------+-------------------------------------+-------------------+
+| SME       | -   Provides ongoing guidance to    | Customer          |
+|           |     the Microsoft feature teams.    |                   |
+|           |                                     |                   |
+|           | -   Serves as the Customer          |                   |
+|           |     operations lead, responsible    |                   |
+|           |     for cloud operations and        |                   |
+|           |     governance.                     |                   |
+|           |                                     |                   |
+|           | -   Takes responsibility for        |                   |
+|           |     validating the quality and      |                   |
+|           |     functionality of the product    |                   |
+|           |     increment.                      |                   |
+|           |                                     |                   |
+|           | -   Participates in all sprint      |                   |
+|           |     reviews.                        |                   |
++-----------+-------------------------------------+-------------------+
+| Adoption  | -   Assists the MC with the         | Microsoft         |
+| and       |     definition of the mission and   |                   |
+| change    |     OKRs.                           |                   |
+| m         |                                     |                   |
+| anagement | -   Works to maintain team focus on |                   |
+| c         |     the product, under leadership   |                   |
+| onsultant |     oversight.                      |                   |
+|           |                                     |                   |
+|           | -   Contributes to the overall      |                   |
+|           |     learning approach to promote a  |                   |
+|           |     product-centric and DevOps      |                   |
+|           |     mindset, aligned with existing  |                   |
+|           |     Customer initiatives, team      |                   |
+|           |     formation, and DevOps tooling   |                   |
+|           |     decisions.                      |                   |
+|           |                                     |                   |
+|           | -   Constructs and delivers the     |                   |
+|           |     material required for team      |                   |
+|           |     members to understand and       |                   |
+|           |     perform efficiently within      |                   |
+|           |     their roles in the engagement.  |                   |
+|           |                                     |                   |
+|           | -   Coaches executive leaders on    |                   |
+|           |     their roles as sponsors for     |                   |
+|           |     change and in support of DevOps |                   |
+|           |     across the entire organization. |                   |
++-----------+-------------------------------------+-------------------+
+
+Engagement governance
+
+The governance structure and processes the team will abide by for the
+engagement are described in the following sections.
+
+Engagement communication
+
+In addition to the communication mechanisms built into the delivery
+approach, the following will be used to communicate during the
+engagement:
+
+-   Communication plan: This document will describe the frequency,
+    audience, and content of communication with the team and
+    stakeholders. Microsoft and the Customer will develop it as part of
+    engagement planning.
+
+-   Status reports: The Microsoft team will prepare and issue regular
+    status reports to engagement stakeholders per the frequency defined
+    in the communication plan.
+
+-   Status meetings: Per the frequency defined in the communication
+    plan, the Microsoft team will schedule regular status meetings to
+    review the overall engagement status, available delivery data,
+    delivery metrics, SLOs, SLIs, open problems, and risks.
+
+Risk and issue management
+
+The following general procedure will be used to manage active engagement
+issues and risks during the engagement:
+
+-   Identify: Identify and document engagement issues (current problems)
+    and risks (potential events that could impact the engagement).
+
+-   Analyze and prioritize: Assess the impact and determine the critical
+    risks and issues that will be actively managed.
+
+-   Plan and schedule: Determine how to manage critical risks and assign
+    responsibility for risk management and issue resolution.
+
+-   Track and report: Monitor and report the status of risks and issues.
+
+-   Escalate: Escalate to engagement sponsors critical issues and risks
+    the team is unable to resolve without assistance.
+
+-   Control: Review the effectiveness of the risk and issue management
+    actions.
+
+Active issues and risks will be monitored and reassessed every week.
+
+Change management process
+
+During the engagement, either party may request modifications to the
+services described in the WO. These changes take effect only when the
+proposed change is agreed upon by both parties within a mutually
+agreeable time frame. Such agreement will be captured in an amendment to
+the contract, or other mutually agreeable form of documentation. No work
+will begin on a change until both parties sign the agreed-upon
+documentation.
+
+Escalation path
+
+The MCs, product council, executive sponsors, and other designees will
+work closely together to manage engagement issues, risks, and change
+requests as described previously. The Customer will provide reasonable
+access to the sponsor or sponsors to expedite resolution. The standard
+escalation path for review, approval, or dispute resolution is as
+follows:
+
+-   Feature team member
+
+-   Migration coordinator
+
+-   Product council
+
+-   Executive steering committee
+
+Customer responsibilities and engagement assumptions
+
+Customer responsibilities
+
+The Customer is responsible for:
+
+-   Providing accurate, timely, and complete information within three
+    business days or as mutually agreed upon.
+
+-   Providing access to people, including knowledgeable Customer
+    personnel and business users as required.
+
+-   Providing sufficient Customer resources with the requisite skills
+    for testing during the engagement.
+
+-   Providing all requisite information to relevant external parties to
+    obtain clearances for all personnel actively participating in the
+    engagement, if security clearances are required.
+
+-   Providing access to systems for both onsite and remote work.
+
+-   Obtaining Azure subscriptions and capacity required to support the
+    environments defined in the scope section of the WO.
+
+-   Purchasing hardware, software licenses, or tools (Microsoft or
+    third-party).
+
+-   Providing a suitable work environment when onsite presence is
+    required.
+
+-   Managing all Customer personnel and vendors who are not managed by
+    Microsoft.
+
+-   Managing external dependencies for related engagements or programs.
+
+-   Confirming regulatory compliance, if applicable.
+
+-   Providing standard product training for external systems as
+    required.
+
+-   Overseeing organizational change management:
+
+    -   Redesigning or re-engineering business processes.
+
+    -   Designing or redesigning the functional organization.
+
+    -   Planning or undertaking user communications.
+
+-   Informing Microsoft of any citizenship or visa requirements prior to
+    the start of the engagement.
+
+-   Conducting initial triaging after all releases (by the Customer
+    first responder organization).
+
+-   Providing application support.
+
+-   Fixing bugs and troubleshooting problems that are related to
+    applications or other third-party software, hardware products, or
+    applications that are not explicitly in the product backlog.
+
+-   Preparing documentation about processes, standards, policies, and
+    existing guidelines.
+
+-   Designing, configuring, integrating, deploying, or fixing issues in
+    commercially available third-party software.
+
+-   Implementing modifications to third-party systems and external
+    interfaces to support integration.
+
+Engagement assumptions
+
+The following are assumptions that apply to the engagement between the
+Customer and Microsoft. During the engagement, the information and
+assumptions in this document will be validated, and if a material
+difference is present, this could result in Microsoft initiating a
+change request to cover additional work or extending the engagement
+duration. If a specific engagement requires different assumptions than
+those listed below, that engagement may document assumptions that
+supersede or override the assumptions listed below.
+
+The following assumptions have been made for all engagements between the
+Customer and Microsoft:
+
+-   Workday:
+
+    -   Local Microsoft employees will follow the standard Microsoft (or
+          appropriate subsidiary) workday and work week.
+
+    -   If Microsoft Global Delivery factories are used, then the
+          following also apply:
+
+    -   The standard workday for the offshore Microsoft factory team is
+        between 9:30 AM and 6:30 PM India Standard Time, Monday through
+        Friday, except for scheduled holidays. Limited exceptions can be
+        made with advanced planning to support production-level changes
+        or to address a need that requires a meeting between an offshore
+        resource and the Customer, which cannot be accomplished during
+        the standard workday. Exceptions will be coordinated by the
+        program manager.
+
+    -   Offshore resources that are not part of the factory will be
+        available between 7 AM and 10 PM India Standard Time over an
+        eight-hour continuous window.
+
+-   Remote work:
+
+    -   The Microsoft feature team may perform services remotely.
+
+    -   If the Microsoft feature team is required to be present at the
+          Customer location every week, resources will typically be on
+          site for three nights and four days, arriving on a Monday and
+          leaving on a Thursday.
+
+    -   The place of performance under the WO may be at a Microsoft
+          facility, a Customer facility, or various remote and off-site
+          locations, including Microsoft employee home offices.
+
+-   Language:
+
+    -   All engagement communications and documentation will be in
+          English. Local language support and translations will be
+          provided by the Customer.
+
+-   Staffing:
+
+    -   If necessary, Microsoft will make staffing changes. These may
+          include, but are not limited to, resources and engagement
+          roles.
+
+    -   If a security clearance is required, all resources will have the
+          appropriate level of security access required to complete
+          engagement-related efforts.
+
+    -   Microsoft may staff from a global pool of resources.
+
+-   Informal knowledge transfer:
+
+    -   No formal training materials will be developed or delivered as
+          part of this engagement. All information transfer will be
+          through informal knowledge transfer.
+
+-   Known standards:
+
+    -   Microsoft expects to use Azure DevOps, Azure Pipelines and may
+          use GitHub for a standard delivery.
+
+    -   Time will be required to learn the Customer tooling if there are
+          deviations from Microsoft standards. This time has not been
+          included in engagement estimates.
+
+    -   Microsoft will use standard Azure DevOps process templates, as
+          well as other IP designed to speed up delivery, including, but
+          not limited to, standard work items, pipelines, and document
+          templates.
+
+-   Other assumptions:
+
+    -   In addition to engagement team members, the Customer shall allow
+          Microsoft internal systems to access the delivery platforms
+          and tools used for this engagement.
+
+    -   Microsoft will read, store, and share necessary delivery
+          insights on the work artifacts and products generated as part
+          of this engagement (for example: test cases, code base, and
+          pipelines) that are hosted on the delivery platforms like
+          Azure DevOps, Jira and GitHub.
+
+    -   Microsoft will make available to the Customer all data and
+          insights gathered during the engagement. Microsoft will purge
+          said data and insights upon explicit Customer request or at
+          the end of the engagement.
+
+    -   Holidays, vacations, and training are not factored into
+          estimates.
+
+    -   All work is to be contiguously scheduled. Any breaks in the
+          engagement calendar must be scheduled four weeks in advance,
+          or the time will be billed without interruption.
+
+    -   The Customer required compliance training for regulated
+          industries is not included in the estimation. This includes:
+
+        -   Security training
+
+        -   Internal orientation
+
+        -   Financial compliance training
+
+        -   Healthcare compliance training
+
+        -   Procedures outside of Microsoft standard compliance
+
+        -   Background checks, fingerprinting, badging, and
+              authentication.
+
+-   The Customer will meet the necessary requirements to help make sure
+    the solution design meets regulatory requirements.
+
+-   If localization support is required to support additional languages,
+    it may be added to the product backlog.
+
+-   Azure services and technology
+
+    -   Azure services and Azure-supported Microsoft technologies will
+          be used to develop the solution.
+
+    -   The components to be developed by Microsoft will be cloud
+          hosted.
+
+    -   Microsoft will not modify any existing code base that was not
+          produced by the Microsoft delivery team.
+
+-   Azure DevOps
+
+    -   Either the Customer will provide a Microsoft Azure DevOps
+          services account that is accessible by all team members, or
+          Microsoft will provide an account (possibly with limited
+          Customer access).
+
+-   The Customer agrees Microsoft may associate the Customer online
+    services with Professional Services accounts through configuration
+    of Customer subscriptions, Azure resources, and deployed
+    applications.
+
+-   If the Customer approves a solution design that uses a product that
+    is not generally available, the Customer acknowledges and accepts
+    that it may affect the engagement cost and timeline.
+
+-   If the Customer determines that Microsoft or its agents will have
+    access to personal identifiable information, the Customer is
+    obligated to inform Microsoft within five days that further access
+    to that information requires the use of equipment owned or supplied
+    by the Customer.
+
+-   If the engagement uses any purchased GitHub Consulting Services,
+    those services are provided by GitHub, Inc., a wholly owned
+    subsidiary of Microsoft Corporation. Notwithstanding anything to the
+    contrary in your WO, the GitHub Privacy Statement available at
+    https://aka.ms/github_privacy and the GitHub Data Protection
+    Addendum and Security Exhibit located at https://aka.ms/github_dpa
+    will apply to your procurement of GitHub Consulting Services.

@@ -1,0 +1,1753 @@
++-----------------------------------------------------------------------+
+| Cloud Transition Services (CTS)                                       |
+| Creation Template Guidance                                            |
+| (Delete this page & table before sending to a Customer!)              |
++=======================================================================+
+| About this document                                                   |
+|                                                                       |
+| This document has been created by the Offerings Teams as an insert    |
+| into a customer’s ESWO only for the Offering it represents and that   |
+| is a published Microsoft Industry Solutions Delivery worldwide        |
+| Phoenix Catalog (CompassOne) Offering.                                |
+|                                                                       |
+| This document, and the content contained within, can be used in this  |
+| scenario:                                                             |
+|                                                                       |
+| 1.  As content that can be inserted into a Customer’s ESWO, much as   |
+|     the “Work Order Stub” concept.                                    |
++-----------------------------------------------------------------------+
+| Instructions for Deal Creators                                        |
+|                                                                       |
+| You will notice throughout this document:                             |
+|                                                                       |
+| -   Pink text, which is instructional and should be deleted before    |
+|     sending to the Customer                                           |
+|                                                                       |
+| -   Blue text, which is optional and should be removed or changed to  |
+|     style ‘normal’ based on the Customer deal before sending to the   |
+|     Customer                                                          |
+|                                                                       |
+| The content in this document is designed to be used directly in an    |
+| ESWO. Complete these steps to tailor for your customer:               |
+|                                                                       |
+| -   Update the offer content for the Customer deal.                   |
+|                                                                       |
+| -   Remove any Pink text and remove or change any Blue text.          |
+|                                                                       |
+| -   Extract the content in this template and place it directly into   |
+|     the section 1.2 Description of the Services, of an ESWO (maintain |
+|     the “Services Delivery Location: <Country>heading)                |
+|                                                                       |
+| -   Be sure to also attach the Engagement Delivery Approach (EDA)     |
+|     document to the ESWO, by listing in the “Attachments” section,    |
+|     when using this template since the EDA contains the common        |
+|     approach and governance content that applies to all the services  |
+|     in this SKU.                                                      |
+|                                                                       |
+| -   The staffing plan for the engagement should be created from the   |
+|     CompassOne record and may be included as an attachment and listed |
+|     in the “Attachments” section of the Work Order, if needed. See    |
+|     the Deal Shaping and Pricing Guide for additional guidance.       |
+|                                                                       |
+| -   The ESWO 1.3 Fees section needs to be updated from the OSE        |
+|     template.                                                         |
+|                                                                       |
+|     -   Copy financials from CompassOne into the OSE ESWO             |
+|         Calculations tab following the guidance there.                |
+|                                                                       |
+|     -   Copy the resulting pricing into the OSE ESWO Guidance tab.    |
+|         Copy the ESWO Guidance tab content into the ESWO 1.3 Fees     |
+|         section following the guidance at the top of the tab.         |
+|                                                                       |
+|     -   In CompassOne, under Payments, generate the monthly fee       |
+|         schedule and populate the Billing Schedule table that was     |
+|         part of the copied content.                                   |
++-----------------------------------------------------------------------+
+| Template Modularity                                                   |
+|                                                                       |
+| The Cloud Transition Services and Data Estate Modernization SKUs are  |
+| modular in nature.                                                    |
+|                                                                       |
+| The SKUs have many services that can be enabled or disabled depending |
+| on the customer needs. Services and their acronyms:                   |
+|                                                                       |
+| -   Azure Landing Zone (ALZ)                                          |
+|                                                                       |
+| -   Workload Landing Zone – Azure Kubernetes Service (WLZ-AKS)        |
+|                                                                       |
+| -   People Mobilization for Velocity Service (PMVS)                   |
+|                                                                       |
+| -   Cloud Operations & Governance (COG)                               |
+|                                                                       |
+| -   Azure Migration Services (AMS)                                    |
+|                                                                       |
+| -   Azure Refactoring Service (ARS)                                   |
+|                                                                       |
+| -   Azure Transformation Services (ATS)                               |
+|                                                                       |
+| -   Container Migration Services (CMS)                                |
+|                                                                       |
+| -   Data Modernization Services (DMS)                                 |
+|                                                                       |
+| -   Quality and Reliability Services (QRS)                            |
+|                                                                       |
+| -   Modernization Support Services (MSS)                              |
+|                                                                       |
+| Each of these services has several options. When editing the DoS,     |
+| make sure the service options map was estimated in OSE and            |
+| CompassOne.                                                           |
+|                                                                       |
+| General rules:                                                        |
+|                                                                       |
+| -   ALZ is required per Domain policy.                                |
+|                                                                       |
+| -   At least one of AMS, ARS, ATS, or CMS must be included.           |
+|                                                                       |
+| -   WLZ-AKS is strongly recommended when CMS is active                |
+|                                                                       |
+| -   PMVS is strongly recommended per Domain policy.                   |
+|                                                                       |
+| -   COG is strongly recommended per Domain policy.                    |
+|                                                                       |
+| -   DMS is currently optional as the scope is limited to Oracle       |
+|     databases.                                                        |
+|                                                                       |
+| Editing for using the IGD Landing Zone:                               |
+|                                                                       |
+| -   Includes Azure Platform, Azure Networking Cloud and Datacenter,   |
+|     Azure AD Integration, PAW, and COG Azure Governance, COG Azure    |
+|     Operations, and COG Cloud Monitoring for Azure. Remove other      |
+|     Azure Identity and COG services when this is chosen. All of this  |
+|     is shown in OSE when the IGD Landing Zone is chosen.              |
+|                                                                       |
+| Editing by section:                                                   |
+|                                                                       |
+| -   1.2.1 – Update the customer-desired business outcomes             |
+|                                                                       |
+| -   1.2.2 – Edit the phases, services and their descriptions to match |
+|     what is being estimated. CTS has multiple options when it comes   |
+|     to phases. Phase options are limited to:                          |
+|                                                                       |
+|     -   Prepare, Pilot, and Migrate (Full Program),                   |
+|                                                                       |
+|     -   Prepare only                                                  |
+|                                                                       |
+|     -   Prepare and Pilot.                                            |
+|                                                                       |
+|     -   Pilot and Migrate IF Prepare was previously done              |
+|                                                                       |
+|     -   Migrate IF Prepare and Pilot were previously done             |
+|                                                                       |
+| The CTS Customer Presentation – TDM on Services Portfolio has the     |
+| Prepare, Pilot, Migrate diagram if it needs to be customized to       |
+| remove services.                                                      |
+|                                                                       |
+| The Data Strategy Accelerator includes the Data Strategy Workshop;    |
+| keep both service descriptions when the Data Strategy Accelerator is  |
+| in scope.                                                             |
+|                                                                       |
+| Edit the services and the scope based on the OSE inputs. Most scope   |
+| requires the Migrate phase. Edit the products that are mentioned to   |
+| match the scope.                                                      |
+|                                                                       |
+| -   1.2.2 – No changes needed.                                        |
+|                                                                       |
+| -   1.2.3 – Edit the intake application monthly amount from OSE       |
+|                                                                       |
+| -   1.2.4 – Edit the size and timeline info based on the scope and    |
+|     OSE.                                                              |
+|                                                                       |
+| -   1.2.5 – Should not need changes                                   |
+|                                                                       |
+| -   1.2.6 – Edit the technology requirements based on the guidance    |
+|     and what is being included.                                       |
+|                                                                       |
+| -   1.2.7 – Edit the dependencies based on the services to be         |
+|     delivered.                                                        |
+|                                                                       |
+| -   1.2.8 – Tailor the organization information to describe roles     |
+|     unique to the services selected which are not already covered in  |
+|     the EDA.                                                          |
++-----------------------------------------------------------------------+
+| Do not use this content for the following scenarios:                  |
+|                                                                       |
+| -   Time and Materials services – this offer is intended for a fixed  |
+|     fee only.                                                         |
+|                                                                       |
+| -   Germany, Austria, and Switzerland: This Description of Services   |
+|     ESWO stub, combined with EDA template, is acceptable for use as a |
+|     Services Contract (Beratungsleistung/Dienstleistung/Einfacher     |
+|     Auftrag) in Fixed Fee (Austrian “Beratungsleistung” §§ 1153 ff.   |
+|     ABGB, German “Dienstleistung” §§ 611 ff. German Civil Code BGB,   |
+|     or Swiss “Einfacher Auftrag” Art. 394 et seqq. Swiss Code of      |
+|     Obligations). Reason: there is no acceptance process, nothing     |
+|     requires acceptance, we do not describe deliverables.             |
+|     Engage CCM and SQA as this case needs a customized ESWO, it       |
+|     cannot be fit into the standard ESWO template.                    |
++-----------------------------------------------------------------------+
+| Need help?                                                            |
+|                                                                       |
+| -   There are references to the SOW Writing Guide —that document      |
+|     accompanies this template with greater explanations, examples and |
+|     handy hints. It is available from K360                            |
+|                                                                       |
+| -   If you have a contracting question, please reference the          |
+|     materials on K360 or, for general field support questions, reach  |
+|     out for assistance through AnswersHub.                            |
++-----------------------------------------------------------------------+
+
+Description of the services
+
+Microsoft will partner with the Customer in an Azure migration and
+modernization effort. This partnership is in the form of an Azure
+migration program with the objective to migrate and operationalize up to
+the scoped number of applications and databases over the stated program
+length. This program is designed with considerable flexibility to drive
+migration velocity across a broad set of environments and applications
+and includes the foundational activities of building out the landing
+zone, applying Microsoft best-practice security controls, and operations
+and governance. The details of the services provided are in the
+following sections.
+
+Any dates provided for Microsoft are estimates only.
+
+Customer-desired business outcomes
+
+This section cannot be left blank or have the outcomes indicated as to
+be determined (TBD). At a minimum, the overall business value to be
+delivered should be conveyed here. In defining outcomes, it is a balance
+between clarity (agree on where we are headed) and measurement (so that
+we understand if we are moving in the right direction of the desired
+outcomes).
+
+At the end of the engagement, the agreed outcome will be assessed
+jointly with the Customer.
+
+Ideally, when filling in this section, do not go into more detail than
+epics and features. The focus is on business functional needs. A full
+list of detailed user stories should not be used here because it can
+create the expectation of a fixed scope, as in, all the user stories
+will be delivered as part of this engagement.
+
+The Customer has expressed the desire to obtain the following business
+outcomes. The agile delivery approach (described in the Engagement
+Delivery Approach section of the attached Engagement Delivery Approach
+(EDA)) allows the Customer to continually adjust and adapt the outcomes
+and direction of any solutions designed to reach said outcomes.
+Microsoft will continue its efforts based on the priorities and
+direction provided by the Customer until such time as all capacity has
+been consumed.
+
++-------------------------------------+--------------------------------+
+| Desired business outcomes           | Assumptions                    |
++=====================================+================================+
+| Example desired business outcomes.  | -   The Customer has a plan in |
+| Replace with those expressed by the |     place for applications not |
+| Customer.                           |     moving to Azure.           |
+|                                     |                                |
+| Exit the datacenter in 18 months to |                                |
+| reduce CapEx costs.                 |                                |
++-------------------------------------+--------------------------------+
+| Modernize key applications to take  | -   Applications being         |
+| advantage of Microsoft Azure        |     modernized do not require  |
+| services.                           |     new features during the    |
+|                                     |     initial modernization to   |
+|                                     |     Azure.                     |
++-------------------------------------+--------------------------------+
+
+If more capacity is needed to deliver the desired business outcomes or
+if additional outcomes need to be defined, the change management process
+described in the attached EDA will be followed to increase capacity.
+
+Phases, services, and products
+
+Phases
+
+Using the agile delivery approach, sprints are implemented in three
+broad engagement phases: Prepare, Pilot, and Migrate. These phases are
+illustrated in the following diagram.
+
+Choose the image based on the assigned customer complexity in OSE.
+
+Option 1: Customer Complexity = Simple:
+
+[This graphic depicts Option 1, Customer Complexity = Simple. There are
+three phases: Prepare, Pilot, and Migrate. The activities associated
+with each of the phases is shown and discussed in the text that
+follows.]
+
+Option 2: Customer Complexity = Medium or Complex:
+
+[This graphic depicts Option 2, Customer Complexity = Medium or Complex.
+There are three phases: Prepare, Pilot, and Migrate. The activities
+associated with each of the phases is shown and discussed in the text
+that follows.]
+
+Prepare phase
+
+The Prepare phase consists of a series of parallel sprints that will be
+used to:
+
+-   Align on an end-to-end migration process that combines technical,
+    operational, and business activities. These parallel sprints will
+    also be used for tooling, intake and application disposition with
+    backlog refinement, and the automation required for a successful
+    migration program. This will produce a pilot-ready version 0.1 of
+    the Azure migration playbook in Microsoft Azure DevOps, the initial
+    cloud catalog of discovered assets, and the baseline velocity plan.
+
+  Add the following if customer complexity is medium or complex in OSE
+
+-   Validate key processes and tooling with a migration proof of
+    concept.
+
+  Choose one:
+
+-   Design and implement an Azure Landing Zone (ALZ).
+
+-   Remediate an existing Azure Landing Zone (ALZ).
+
+-   Design and implement an Azure Kubernetes Service (AKS) landing zone
+    for containerized applications.
+
+-   Align the Customer’s IT operating model to the Microsoft Cloud
+    Adoption Framework.
+
+-   Mobilize key Customer stakeholders to achieve migration velocity.
+
+If the Prepare phase (only) has already been delivered in a previous
+engagement add the following:
+
+The Prepare phase was previously delivered in [Engagement name] and the
+outputs from that engagement will be used to drive the current project.
+
+Pilot phase
+
+The Pilot phase consists of a series of parallel sprints taking a set of
+selected applications and completing the activities in the migration
+playbook. Include the following when the Pilot phase has been extended
+in OSE: The Pilot phase’s intake and application disposition activities
+have been extended to drive the creation of a deeper backlog of
+applications to be migrated. The Customer and Microsoft will use the
+feedback obtained during this phase to review and agree on upgrades to
+the migration playbook. This phase will end with a revised,
+migration-ready version 1.0 of the Azure migration playbook.
+
+If the Prepare and Pilot phases have already been delivered in a
+previous engagement add the following:
+
+The Prepare and Pilot phases were previously delivered in [Engagement
+name] and the outputs from that engagement will be used to drive the
+current project.
+
+If the Pilot phase has not been delivered and is not in scope, add the
+following:
+
+The Pilot phase is not in scope and may be delivered in a future
+engagement.
+
+Migrate phase
+
+The Migrate phase consists of parallel sprints running the defined
+migration playbook across applications and business units at scale to
+achieve velocity in the migration program. The initial, assumed scope
+for this phase is listed below. This phase may lead to the
+identification of needed improvements that will be reviewed and added to
+the migration playbook through a defined governance process. During this
+phase, scale feature teams may be added, based on the application
+backlog and the limits defined in the Program size and timeline section.
+
+If the Migrate is not in scope, add the following:
+
+The Migrate phase is not in scope and may be delivered in a future
+engagement.
+
+Services
+
+Microsoft plans to deliver the following services during sprints in the
+phases noted based on the prioritized backlog. While the program uses an
+initial set of assumptions to help size each service, actual migration
+and modernization strategy assignments will be done during application
+and database intake and assessment, based on Customer and technical
+needs, which may vary from the following tables. To achieve the
+migration and modernization in the time frames stated below, it will
+require the active participation of [Customer name] IT, business
+application owners, and executive sponsors during the project. Actual
+services delivered will be governed by the prioritized product backlog
+that will evolve throughout the engagement. If scope changes result in a
+resourcing or duration adjustment, the program’s change management
+process as described in the EDA will be followed.
+
+Foundation services
+
+Use information from the Inputs tab of the OSE estimator that was used
+to structure the project to fill out the section below.
+
+Foundation services build the platform to support a scale migration
+program. Most foundation services, unless otherwise noted, run in the
+Prepare phase.
+
+Azure Landing Zone (ALZ)
+
+-   Azure platform: [Establish | Improve] Microsoft Azure as the
+    platform for cloud transformation by designing and implementing the
+    ALZ based on the principles and guidance published in the Microsoft
+    Cloud Adoption Framework, Azure Landing Zone, and Azure Security
+    Benchmark.
+
+-   Azure networking: Establish Azure networking services from
+    on-premises to Azure.
+
+-   Azure identity: Implement key capabilities in Azure Active Directory
+    (Azure AD) and on-premises identities to increase the security
+    posture of the organization.
+
+-   Azure AD integration: Establish integration between your on-premises
+    Active Directory Domain Services (AD DS) environments and Azure AD
+    to support onboarding to Azure and other online services. Azure
+    Active Directory Connect will be installed and configured for
+    synchronization, and authentication will be established using
+    password hash synchronization, pass-through authentication, or
+    federated authentication using Active Directory Federation Services
+    (AD FS) or a third-party identity provider.
+
+-   Azure AD identity management: Implement and configure Azure AD
+    self-service password management, self-service group management
+    (SSGM), privileged identity management (PIM), and a group-based
+    licensing assignment.
+
+-   Azure AD conditional access and Multi-Factor Authentication (MFA):
+    Implement and configure MFA and configure Azure AD conditional
+    access policies for a tenant, applying controls to applications
+    integrated to Azure AD.
+
+-   Azure AD application integration: Integrate a subset of your
+    applications with Azure AD for achieving single sign-on (SSO)
+    authentication. This service may extend into the Pilot and Migrate
+    phases for targeted applications.
+
+  -----------------------------------------------------------------------
+  Area                                             Scope
+  ------------------------------------------------ ----------------------
+  Azure AD integration – AD DS forests             [Default is 1]
+
+  Azure AD integration – AD FS farms               [Default is 0]
+
+  Azure AD application integration - applications  [Default is 3]
+  -----------------------------------------------------------------------
+
+Workload Landing Zone - Azure Kubernetes Service (WLZ-AKS)
+
+[Establish | Improve] AKS as the landing zone for containerized
+applications and services by designing and implementing the WLZ-AKS
+based on the principles and guidance published in the AKS Azure Landing
+Zone and the AKS Secure Baseline. This service is ongoing through the
+Prepare, Pilot, and Migrate phases.
+
+Security and Compliance for Azure (SCA)
+
+-   Governance, risk, and compliance (GRC) planning: Establish planning
+    to capture additional risks or regulatory compliance requirements.
+
+-   Azure platform security: Establish baseline security controls for
+    the Azure platform, which provide general protections for the Azure
+    AD tenant, including associated resources and subscriptions.
+
+-   Azure service security: Establish baseline security controls for
+    Azure services that work with the Azure platform security controls
+    to provide foundational security and general safeguards for
+    workloads being migrated.
+
+-   Azure workload security: Establish baseline security controls for an
+    application or application pattern that works with the Azure
+    platform and Azure service security controls. This service is for
+    the Pilot and Migrate phases only.
+
+The SCA scope is listed in the following table.
+
+  -----------------------------------------------------------------------
+  Activity                                         Estimated scope, up to
+                                                   the limits specified
+  ------------------------------------------------ ----------------------
+  GRC – frameworks                                 [Number of Frameworks]
+
+  Azure platform security – AD tenants             [Number of Tenants]
+
+  Azure service security – Azure services          [Number of Azure
+                                                   services]
+
+  Azure workload security – rehosted application   [Number of rehosted
+  patterns                                         apps]
+
+  Azure workload security – refactored application [Number of refactored
+  patterns                                         apps]
+  -----------------------------------------------------------------------
+
+Privileged Access Workstation (PAW) for Cloud Service Management
+
+Deploy and configure dedicated administrative workstations in an
+environment designed to help protect high-privilege administrative
+accounts from becoming compromised. This service provides highly
+automated activities to deploy and configure the workstations to manage
+cloud workloads.
+
+The PAW scope is listed in the following table.
+
+  -----------------------------------------------------------------------
+  Area                                             Estimated scope, up to
+                                                   the limits specified
+  ------------------------------------------------ ----------------------
+  PAW devices                                      [Default is 10]
+
+  PAW supported hardware models                    [Default is 1]
+
+  PAW supported applications/tools                 [Default is 1]
+  -----------------------------------------------------------------------
+
+Data Strategy Workshop
+
+Match Customer objectives and key results (OKRs) with specific use cases
+and assess shared data service capabilities, people, processes, change
+management readiness, and data maturity. The outcome is a horizon-based
+delivery (refer to Definitions and acronyms in the EDA) through shared
+strategy services and use-case implementation to help realize critical
+business value for customers.
+
+Data Strategy Accelerator
+
+Implement the foundational capabilities and shared data services
+required for a modern data analytics platform. Delivery of prioritized
+use cases defined during the Data Strategy Workshop service, including
+data lake, ingestion, handshaking, control file, and data catalog using
+Microsoft-recommended practices and IP. This service extends into the
+Pilot and Migrate phases.
+
+People Mobilization for Velocity Service (PMVS)
+
+Assist the Customer with team mobilization to achieve cloud migration
+velocity. We prepare, equip, and support key business and IT
+stakeholders to more successfully prepare their assets and subsequently
+achieve more efficient migration. PMVS is designed to minimize the
+negative, people-side consequences associated with cloud transformation.
+This service runs continuously through the Prepare, Pilot, and Migrate
+phases.
+
+Cloud Operations and Governance (COG)
+
+Help the Customer become operationally ready to run the Azure platform
+and target workloads, align to the Microsoft Cloud Adoption Framework,
+and transition IT operations to enhanced ways of working on the Azure
+platform.
+
+-   Operations readiness review: Develop a prioritized approach for
+    achieving the desired state based on the Microsoft vision for
+    operationalizing target Azure workloads along with the current state
+    of related operations and service management.
+
+-   Azure governance: Provide recommended disciplines, policies, and
+    practices for establishing a governance framework for Azure based on
+    five disciplines: identity baseline, security baseline, cost
+    management, resource consistency, and deployment acceleration.
+
+-   Azure operations: Provide recommended operational roles,
+    responsibilities, tasks, and processes aligned to the five
+    disciplines of Azure operations: inventory and visibility, operation
+    compliance, protect and recover, platform operations, and
+    operational processes.
+
+-   Cloud monitoring for Azure: Establish a foundation for monitoring
+    Azure services to provide core visibility into the health and
+    availability of the Azure landscape using native Azure capabilities
+    and patterns. Integrate into existing alert and incident management
+    processes to support the operational lifecycle.
+
+-   Target Operating Model strategy: Define a vision and strategy in the
+    form of an implementation backlog for the transformation of IT to a
+    Target Operating Model that is cloud-first and cloud native, with
+    increased efficiency and agility to realize the benefits of modern
+    cloud capabilities that help support the business to rapidly
+    innovate.
+
+-   Target Operating Model delivery: Lead the Customer through the
+    detailed planning and implementation of the Target Operating Model
+    that will transform the IT organization topology, team roles and
+    responsibilities, tooling, and processes, allowing IT to deliver
+    foundational cloud service capabilities to the business in a
+    consistent, timely, cost-efficient, and more secure manner. This
+    service extends during the Pilot and Migrate phases only.
+
+-   Operations control framework: Lead and coach the Customer’s teams to
+    implement the recommended operations and governance controls using
+    Microsoft cloud native technologies and the Microsoft technical
+    library of control framework artifacts. Iterate in an agile manner
+    to continually mature and improve the Customer’s cloud operating
+    model. This service extends to the Pilot and Migrate phases only.
+
+Migration and modernization services
+
+Use information from the Inputs tab of the OSE estimator that was used
+to structure the project to fill out the section below.
+
+Migration and modernization services move servers, applications, and
+databases at scale to Azure across a variety of strategies and
+supporting services. Most migration and modernization services, unless
+otherwise noted, run in the Pilot and Migrate phases.
+
+Migration and Modernization Planning
+
+Align on an end-to-end migration process that combines technical,
+operational, and business activities; tooling; intake and application
+disposition with backlog refinement; and the automation required for a
+successful migration program. This service runs in the Prepare phase.
+
+Intake and Application Assessment
+
+Produce an application disposition and validate in-scope backlog items.
+<Number of Intake and Assessment Only applications> have been identified
+to be taken through intake and application assessment, but not to be
+moved to Azure.
+
+Azure VMware Solution (AVS) Deployment Planning
+
+Plan and create an instance of AVS and VMware vSphere-related objects.
+Install and configure VMware HCX in source and target VMware vCenters.
+The service has been sized to set up [Number of vCenters from OSE]
+VMware vCenter(s) and runs in the Prepare phase.
+
+Azure Migration Services (AMS)
+
+Provide services to rehost servers, applications, and databases in
+Azure.
+
+-   Rapid application migration: As-is migration of applications by
+    servers to Infrastructure as a Service (IaaS) or AVS. An operating
+    system upgrade is available via automation.
+
+    -   Low-touch approach: Tool-based migration by servers or subnet.
+
+    -   Light assessment and planning: Minimal application team
+          involvement and no planning deliverables.
+
+    -   Databases: If any, databases are migrated as part of server
+          migration.
+
+    -   Fast velocity: Accelerated migration to Azure IaaS or AVS with
+          little application owner involvement.
+
+-   Application migration: As-is migration of applications to Azure IaaS
+    or AVS. An operating system upgrade is available via automation.
+
+    -   Medium-touch approach: Tool-based migration by application.
+
+    -   Standard assessment and planning: Moderate application team
+          involvement. An application migration plan is the deliverable.
+
+    -   Simple or medium complexity databases: Database migration to
+          Azure IaaS, AVS, or platform as a service (PaaS).
+
+    -   Medium velocity: Migration velocity is dependent on Customer
+          resource availability for migration acceptance testing (MAT).
+
+-   Clean deployment: Redeployment of applications on new Azure virtual
+    machines. Enhancements include Infrastructure-as-Code (IaC), new
+    operating system version, and upgraded application components,
+    targeting Azure IaaS, AVS, or PaaS.
+
+    -   High-touch approach: Deployment of new servers by application.
+
+    -   Complex: Deep assessment and planning, and significant
+          application team involvement. An application migration plan
+          and application deployment plan are deliverables.
+
+    -   Simple or medium complexity databases: Database migration to
+          Azure IaaS, AVS, or PaaS.
+
+    -   Variable velocity: Migration velocity is dependent on Customer
+          resource availability for planning or MAT and the number of
+          scale components.
+
+The AMS scope is listed in the following table.
+
+  -----------------------------------------------------------------------
+  Rehost strategy             Application count
+  --------------------------- -------------------------------------------
+  Rapid application migration [Combination of Rapid App Migration (RAM)
+                              and RAM with OS Upgrade]
+
+  Application migration       [Combination of App Migration (AM) and AM
+                              with OS Upgrade]
+
+  Clean deployment            [Clean Deployment]
+
+  Total                       [Applications to be Rehosted]
+  -----------------------------------------------------------------------
+
+Azure Refactoring Service (ARS)
+
+Refactor legacy .NET, .NET Core, Java, Classic Active Server Pages
+(ASP), WordPress, and Hypertext Preprocessor (PHP) web applications to
+the Azure platform as PaaS services for supported runtimes and versions.
+Refactoring refers to modifying applications through targeted coding and
+application changes to prepare the application to be hosted in Azure
+PaaS services. Some of the targeted coding and application changes
+include configuration management, database connectivity, external
+resource connectivity, and authentication.
+
+Not all applications are alike. ARS handles this by assigning a
+complexity based on the applications’ characteristics that include, but
+are not limited to, the items listed below:
+
+-   Language/platform
+
+-   Local server resource usage
+
+-   Session management
+
+-   Messaging patterns
+
+-   Lightweight Directory Access Protocol (LDAP) integration
+
+-   Third-party component usage
+
+-   Custom continuous integration/continuous delivery (CI/CD)
+    requirements
+
+-   Use of legacy technologies (for example, COM/DCOM)
+
+The ARS Complexity Slotting tool will assign the complexity and business
+criticality based on application metadata gathered as part of the intake
+process. Code scanning tools are also used to finalize the complexity
+during the assessment phase. Applications are slotted into three
+complexity buckets consisting of Simple, Medium, and Complex.
+
+The ARS service scope is listed in the following table.
+
+  -----------------------------------------------------------------------
+  Refactor application        Application count
+  complexity                  
+  --------------------------- -------------------------------------------
+  Simple                      [Simple Applications]
+
+  Medium                      [Medium Applications]
+
+  Complex                     [Complex Applications]
+
+  Total                       [Applications to be Refactored]
+  -----------------------------------------------------------------------
+
+Azure Transformation Services (ATS)
+
+Begin the re-architect or rebuild process for legacy applications to
+Azure PaaS. This service does not guarantee a final re-architected or
+rebuilt application in Azure. It is meant to provide a starting capacity
+to begin the re-architect or rebuild development work, which the
+Customer can extend using the change management process described in the
+EDA.
+
+  -----------------------------------------------------------------------
+  Activity                    Application count
+  --------------------------- -------------------------------------------
+  Re-architect                [Rearchitect applications]
+
+  Rebuild                     [Rebuild applications]
+  -----------------------------------------------------------------------
+
+Container Migration Services (CMS)
+
+-   Application containerization: Create container images and migrate
+      on-premises applications in virtual machines to containers in
+      Azure.
+
+-   Container to container migration: Migrate on-premises/unmanaged
+      Kubernetes applications, Google Kubernetes Engine applications, or
+      Amazon’s Elastic Kubernetes Service applications to AKS.
+
+  -----------------------------------------------------------------------
+  Complexity                  Application count
+  --------------------------- -------------------------------------------
+  Application                 [Application Containerization]
+  containerization            
+
+  Container to container      [Container to Container Migration]
+  migration                   
+
+  Total                       [Sum above]
+  -----------------------------------------------------------------------
+
+Data Migration and Modernization Services (DMS)
+
+-   Data migration services: Migrate databases to Azure IaaS virtual
+      machines or rehost databases to the same platform as Azure PaaS
+      targets.
+
++---------------------+----------+-------------------------------------+
+| Database            | IaaS     | PaaS                                |
++=====================+==========+=====================================+
+| SQL Server          | Yes      | Azure SQL Database                  |
+|                     |          |                                     |
+|                     |          | Azure SQL Managed Instance          |
++---------------------+----------+-------------------------------------+
+| Non-SQL Server      |          |                                     |
+| databases           |          |                                     |
++---------------------+----------+-------------------------------------+
+| Oracle              | Yes      | Not applicable (N/A)                |
++---------------------+----------+-------------------------------------+
+| PostgreSQL          | Yes      | Azure Database for PostgreSQL       |
++---------------------+----------+-------------------------------------+
+| MySQL               | Yes      | Azure Database for MySQL            |
++---------------------+----------+-------------------------------------+
+| MariaDB             | Yes      | Azure Database for MariaDB          |
++---------------------+----------+-------------------------------------+
+| Sybase              | Yes      | N/A                                 |
++---------------------+----------+-------------------------------------+
+| DB/2                | Yes      | N/A                                 |
++---------------------+----------+-------------------------------------+
+| NoSQL               | No       | Azure Cosmos DB—The application     |
+|                     |          | must be compatible with an          |
+|                     |          | available Azure Cosmos DB NoSQL     |
+|                     |          | API.                                |
++---------------------+----------+-------------------------------------+
+
+  -----------------------------------------------------------------------
+  Activity                    Database count
+  --------------------------- -------------------------------------------
+  AMS SQL Server migrations   [AMS SQL count]
+
+  CMS SQL Server migrations   [CMS SQL count]
+
+  Total SQL Server            [Sum SQL Server Databases]
+  migrations*                 
+
+  AMS non-SQL Server          [AMS Non-SQL count]
+  migrations                  
+
+  ARS non-SQL Server          [ARS Non-SQL count]
+  migrations                  
+
+  CMS non-SQL Server          [CMS Non-SQL count]
+  migrations                  
+
+  Total non-SQL Server        [Sum Non-SQL Server Databases]
+  migrations                  
+  -----------------------------------------------------------------------
+
+*ARS migrates SQL Server databases as part of its core service.
+
+-   Data modernization services: Refactor Oracle databases to Azure SQL
+      Managed Instance or Azure Database for PostgreSQL along with data
+      migration. Databases are categorized into three in-scope
+      complexity buckets consisting of Simple, Medium, and Complex as
+      defined in the following table.
+
+  ----------------------------------------------------------------------------------------------
+            Non-programmable                             Programmable                 
+            objects                                      objects                      
+  --------- ------------------ ------------ ------------ -------------- ------------- ----------
+            Tables/            Partitions   Custom data  Objects (Proc  Collections   Packages
+            views                           and          / trigger/UDF)               
+                                            collection                                
+                                            types                                     
+
+  Simple    <500               No           10           <100           <10           <10
+
+  Medium    501-1000           Yes          20           101-300        11-30         11-50
+
+  Complex   1001-2000          Yes          40           301-500        31-50         51-100
+  ----------------------------------------------------------------------------------------------
+
+The DMS scope is listed in the following table.
+
+  -----------------------------------------------------------------------
+  Activity                    Oracle database count
+  --------------------------- -------------------------------------------
+  Simple                      [Simple Databases]
+
+  Medium                      [Medium Databases]
+
+  Complex                     [Complex Databases]
+
+  Total                       [Number of Oracle Databases]
+  -----------------------------------------------------------------------
+
+Quality and Reliability Services (QRS)
+
+Provide resources and support to deliver quality, testing, and system
+reliability validation and health monitoring services in support of the
+migration and modernization activities for migrated applications.
+
+The QRS service has been sized as follows.
+
++----------------------+-----------------------------------------------+
+| Activity             | Estimated scope                               |
++======================+===============================================+
+| Migration validation | [Number of rehosted applications requiring    |
+|                      | Migration Validation + Number of refactored   |
+|                      | applications requiring Migration Validation   |
+|                      | from OSE] applications                        |
++----------------------+-----------------------------------------------+
+| Only one performance | [Number of Key Applications requiring         |
+| option can be used.  | Performance Validation if set to Advisory     |
+| Choose based on the  | Services Only] applications                   |
+| Performance          |                                               |
+| Validation setting   |                                               |
+| in OSE.              |                                               |
+|                      |                                               |
+| Performance advisory |                                               |
+| services             |                                               |
++----------------------+-----------------------------------------------+
+| Performance          | [Number of Key Applications requiring         |
+| validation           | Performance Validation if set to Full         |
+|                      | Testing] applications                         |
++----------------------+-----------------------------------------------+
+| Enhanced application | [Number of Key Applications requiring EAS     |
+| support              | Advisory Services from OSE] applications      |
++----------------------+-----------------------------------------------+
+
+Modernization Support Services (MSS)
+
+The goal of MSS is to provide architecture reviews, create IaC
+deployment resources, and facilitate IaaS management services in support
+of both Microsoft and Customer-led migrations.
+
+Post-Migration Support
+
+All migration scope includes post-migration support by the migration
+factory for 10 business days. Post-migration support starts at MAT
+handoff and is signaled by submission of the MAT acceptance form to the
+Customer. Post-migration support covers the following MAT, cutover, and
+post-cutover scenarios.
+
+-   During MAT: Help the Customer resolve migration-related issues.
+
+-   Following MAT acceptance of production environments:
+
+-   Provide guidance to the Customer during post-MAT cutover, if
+      required.
+
+-   Provide guidance to the Customer that addresses migration-related
+      problems reported to Microsoft after MAT acceptance.
+
+-   Following MAT acceptance of nonproduction environments: Support the
+    Customer in order to resolve migration-related problems reported to
+    Microsoft after MAT acceptance.
+
+-   Following post-migration support: The Customer will be solely
+      responsible for resolving any problems not reported during
+      post-migration support. The Customer can choose to fund extended
+      post-migration support for applications which meet specific
+      criteria from a dedicated Microsoft team using “flexible hours
+      allocation.”
+
+-   Hypercare support for server migration: Provide 30 days of virtual
+      machine monitoring support after post-migration support ends.
+
+-   Flexible hours allocation: As opportunities are identified to
+      further drive Azure consumption toward Customer targets, Microsoft
+      and the Customer will jointly review and approve hours from the
+      flexible hours allocation pool of hours. These flexible hours can
+      be applied to tasks that will drive workloads to Azure. [Flexible
+      Factory Hours] flexible hours have been added to the program.
+
+    1.  Product definitions
+
+The program will deliver the products defined below based on the
+prioritized backlog:
+
+-   ALZ is a product and the Customer’s OKRs will be defined during
+    product baseline planning.
+
+-   WLZ-AKS is a product and the Customer’s OKRs will be defined during
+    product baseline planning.
+
+-   AMS and all servers and applications that move through it are a
+    product and follow a shared set of OKRs with specific application
+    OKRs handled only on an exception basis. OKRs will be defined during
+    the Prepare phase.
+
+-   ARS and all applications that move through it are a product and
+    follow a shared set of OKRs with specific application OKRs handled
+    only on an exception basis. OKRs will be defined during the Prepare
+    phase.
+
+-   ATS treats each application as a separate product with distinct OKRs
+    defined during each application’s individual product baseline
+    planning.
+
+-   CMS and all applications that move through it follow a shared set of
+    OKRs with specific application OKRs handled only on an exception
+    basis. OKRs will be defined during the Prepare phase.
+
+-   DMS and all databases that move through it are a product and follow
+    a shared set of OKRs with specific database OKRs handled only on an
+    exception basis. OKRs will be defined during the Prepare phase.
+    Dependencies with applications moving through AMS, ARS, and CMS may
+    exist.
+
+Velocity and application pipeline planning 
+
+Velocity planning
+
+During the Prepare phase, Microsoft and the Customer will build a view
+of the aggregate number of applications and databases planned to be
+migrated or modernized over each sprint remaining in the engagement. The
+view represents the baseline velocity plan for the rates of migration
+and modernization of the applications and databases; it does not
+identify specific applications or databases—only an aggregate count.
+Microsoft and the Customer will use this information to review and
+adjust capacity and duration as needed. During the Pilot and Migrate
+phases, the velocity plan will be updated and reviewed with the
+prioritized backlog, initially after every application and database
+move, and as the engagement progresses, monthly to adjust resourcing or
+duration as needed. If the resourcing or duration adjustment requires a
+formal change request, the engagement’s change management process as
+described in the EDA will be followed.
+
+Application pipeline planning
+
+Microsoft and the Customer will conduct application pipeline planning
+during mutually agreed-upon time frames, to develop the pipeline for the
+program. The program is broken into a multiple series of migration
+sprints called migration waves. The number of migration waves will be
+mutually agreed to during the Prepare phase.
+
+The Customer will be responsible for the identification of the pipeline
+of applications. Starting in the Pilot phase, the Customer agrees to
+maintain a monthly minimum threshold of <Intake Velocity in OSE>
+applications and their associated databases for the intake assessment
+backlog. This threshold will be reviewed on a weekly basis. The Customer
+will also provide to Microsoft, the prioritization of the applications
+included in the pipeline. The pipeline will provide key preliminary
+information about the applicable applications, such as contacts for
+Customer application owners and any known interfacing applications.
+
+For the applications included in the pipeline, Microsoft will then start
+the creation of the migration plan, which will include understanding
+application affinity or which applications must migrate together and
+defining those bundles. Microsoft will engage Customer business owners
+to align the migration plan in accordance with business owner inputs
+regarding application complexity and criticality, business disruption
+impact, business owner/application owner availability, and
+legal/regulatory impacts. Microsoft’s migration process will include
+defining migration bundles (move groups), sequencing the bundles, and
+aligning bundles according to the planned migration wave schedule.
+
+Once the pipeline planning is complete and approved by the Customer, it
+will be incorporated into the migration wave plan.
+
+Program size and timeline
+
+If you need to include a staffing plan (text in blue), please refer to
+guidance in the Deal Shaping & Pricing Guide for suggestions on how to
+create the plan.
+
+The maximum resource capacity and months available by phase are shown in
+the following table. Feature teams will be staffed within these limits.
+For details, please review the staffing plan that is referenced in the
+Attachments section.
+
+Update the tables below with information from OSE / CompassOne.
+
+  ------------------------------------------------------------------------
+  Engagement phase        Duration   Resources
+                          (months)   
+  ----------------------- ---------- -------------------------------------
+  Prepare                 3          Up to 35 resources
+
+  Pilot                   2          Up to 43 resources
+
+  Migrate                 20         Up to 56 resources
+
+  Hypercare support end   1          
+  month                              
+
+  Total                   26         
+  ------------------------------------------------------------------------
+
+The maximum defined capacity of <total hours from OSE> hours can be
+flexibly handled based on the prioritized backlog across the individual
+services and can also be moved between phases, provided that the maximum
+defined capacity is not exceeded.
+
+Along with the resources noted above, the feature teams also use factory
+capacity to handle planning and migration activities. The total
+application and database factory fees are located in the Fees section of
+this WO.
+
+The timeline for this engagement is relative to the engagement start
+date. The start date for the engagement will be based on a mutually
+agreed-upon timeline when key project startup prerequisites are
+completed. All dates and durations provided are estimates only. The
+specific timeline will be finalized during product baseline planning and
+will be updated as part of core engagement planning activities.
+
+We will provide the Microsoft team described in the EDA, Engagement
+organization section, for a period not to exceed <total months from OSE>
+or until the capacity defined above is consumed.
+
+The high-level timeline of the engagement is depicted in the following
+image.
+
+[igh-Level Engagement Timeline The image shows five horizontal lanes or
+rows that depict the relative start dates of each phase. The first row
+is engagement initiation which starts when the engagement starts. The
+second row is product baseline planning which starts after engagement
+initiation and completes before the next phase starts. The third row is
+the prepare phase of delivery sprints. The row depicts 1 or more sprints
+each in succession. The fourth row is the Pilot Phase of delivery
+sprints. The pilot phase begins when the prepare phase ends and has one
+or more sprints each in succession. The last row is the migrate phase of
+delivery sprints. They migrate phase starts at the conclusion of the
+pilot phase and contains one or more sprints each in succession. Upon
+the completion of the migrate phase, the engagement ends.]
+
+Note: Sprint implementation may be concurrent across these workstreams
+and will be addressed in the engagement communications plan for clarity.
+
+Program completion
+
+Microsoft will provide the services described previously during the
+period of performance defined in this Work Order (WO). If additional
+services are required, the engagement’s change management process
+described in the EDA will be followed, and the contract will be
+modified. The engagement will be considered complete when at least one
+of the following conditions have been met:
+
+-   The available capacity has been consumed.
+
+-   All Microsoft activities and product backlog items have been
+    completed.
+
+-   The WO has been terminated.
+
+Due to the nature of the Microsoft Agile Capacity Model, the final
+backlog items produced at the conclusion of the engagement may or may
+not include the completion of all items in the product backlog
+identified by the product manager. The Microsoft team will rely on the
+Customer product manager to determine priority in the product backlog so
+that the important backlog items specified by the Customer can be
+completed during the engagement.
+
+Technology and environment requirements
+
+Technology requirements
+
+The products and technology that are listed in the following table are
+required for the engagement. The Customer is responsible for obtaining
+all specified licenses, products, or subscriptions unless otherwise
+specified.
+
++---------------------+-----------------------------+-----------------+
+| Product and         | Description                 | Ready by        |
+| technology item     |                             |                 |
++=====================+=============================+=================+
+| Microsoft Azure     | Target for the migration    | Start of        |
+| subscription        |                             | engagement      |
++---------------------+-----------------------------+-----------------+
+| Microsoft Azure     | An online Azure DevOps      | Start of        |
+| DevOps Services     | solution unique to the      | engagement      |
+|                     | Customer that will be used  |                 |
+|                     | to manage the Azure         |                 |
+|                     | migration program.          |                 |
++---------------------+-----------------------------+-----------------+
+| Microsoft Power BI  | A reporting solution with   | Start of        |
+| Workspace           | integration to the Azure    | engagement      |
+|                     | DevOps solution—used to     |                 |
+|                     | manage the Azure migration  |                 |
+|                     | program.                    |                 |
++---------------------+-----------------------------+-----------------+
+| Azure Cloud Catalog | A hosted web service and    | Microsoft       |
+|                     | database in the Customer    | supplied,       |
+|                     | subscription configured as  | deployed during |
+|                     | a dedicated migration       | the Prepare     |
+|                     | catalog.                    | phase           |
++---------------------+-----------------------------+-----------------+
+| Azure Migration     | A Microsoft tool used to    | Microsoft       |
+| Toolkit             | automate the installation   | supplied,       |
+|                     | of key discovery and        | deployed during |
+|                     | assessment tools and        | the Prepare     |
+|                     | perform an inventory of     | phase           |
+|                     | Linux server environments.  |                 |
++---------------------+-----------------------------+-----------------+
+| Microsoft Data      | A required Microsoft-hosted | Microsoft       |
+| Transfer and        | secure file transfer        | supplied,       |
+| Management tool     | service that is used when   | deployed during |
+|                     | transferring large files to | the Prepare     |
+|                     | Microsoft.                  | phase           |
++---------------------+-----------------------------+-----------------+
+| Cloudockit          | An online service that      | Microsoft       |
+|                     | generates the documentation | supplied,       |
+|                     | for Azure subscriptions. If | deployed during |
+|                     | required, this tool can be  | the Prepare     |
+|                     | run from an on-premises     | phase           |
+|                     | server that has network     |                 |
+|                     | access to the Azure         |                 |
+|                     | subscription management     |                 |
+|                     | endpoints.                  |                 |
++---------------------+-----------------------------+-----------------+
+| SQL Data Migration  | A no-cost tool used to      | Microsoft       |
+| Assistant (DMA)     | collect SQL Server planning | supplied,       |
+|                     | data.                       | deployed during |
+|                     |                             | the Prepare     |
+|                     |                             | phase           |
++---------------------+-----------------------------+-----------------+
+| GitHub Enterprise   | A DevOps solution used for  | Start of        |
+|                     | work backlog management,    | engagement      |
+|                     | code repositories, and to   |                 |
+|                     | create build and release    |                 |
+|                     | pipelines.                  |                 |
++---------------------+-----------------------------+-----------------+
+| Active Directory    | Functional levels: 2008 -   | Start of        |
+| Domain Services     | 2019                        | engagement      |
++---------------------+-----------------------------+-----------------+
+| Azure Active        | Premium/P2                  | Start of        |
+| Directory           |                             | engagement      |
++---------------------+-----------------------------+-----------------+
+| Include the         |                             |                 |
+| following rows if   |                             |                 |
+| the Privileged      |                             |                 |
+| Access Workstation  |                             |                 |
+| for Cloud Services  |                             |                 |
+| Management          |                             |                 |
+| workstream is in    |                             |                 |
+| scope. Note we      |                             |                 |
+| require either EMS  |                             |                 |
+| E5 and ATP, OR M365 |                             |                 |
+| E5                  |                             |                 |
++---------------------+-----------------------------+-----------------+
+| Microsoft           | E5                          | Start of        |
+| Enterprise Mobility |                             | engagement      |
+| and Security (EMS)  |                             |                 |
++---------------------+-----------------------------+-----------------+
+| Microsoft Defender  |                             | Start of        |
+| ATP                 |                             | engagement      |
++---------------------+-----------------------------+-----------------+
+| Microsoft 365       | E5                          | Start of        |
+|                     |                             | engagement      |
++---------------------+-----------------------------+-----------------+
+| Include the         |                             |                 |
+| following rows if   |                             |                 |
+| Clean Source        |                             |                 |
+| Deployment is in    |                             |                 |
+| scope as part of    |                             |                 |
+| PAW-CSM             |                             |                 |
++---------------------+-----------------------------+-----------------+
+| Windows Server      | 2019                        | Start of        |
+|                     |                             | engagement      |
++---------------------+-----------------------------+-----------------+
+| Windows 10          | Enterprise x64              | Start of        |
+|                     |                             | engagement      |
+|                     | Education x64               |                 |
++---------------------+-----------------------------+-----------------+
+| Include the         |                             |                 |
+| following rows if   |                             |                 |
+| the Azure Migration |                             |                 |
+| Services are in     |                             |                 |
+| scope (AMS)         |                             |                 |
++---------------------+-----------------------------+-----------------+
+| Azure Migrate       | A Microsoft tool used for   | Start of        |
+|                     | assessment and migration.   | engagement      |
++---------------------+-----------------------------+-----------------+
+| Service Map         | A service in Azure that     | Start of        |
+|                     | automatically discovers     | engagement      |
+|                     | application components on   |                 |
+|                     | Windows and Linux systems   |                 |
+|                     | and maps the communication  |                 |
+|                     | between services; includes  |                 |
+|                     | the Operations Management   |                 |
+|                     | Suite Agent, and the        |                 |
+|                     | Microsoft Dependency Agent. |                 |
++---------------------+-----------------------------+-----------------+
+| Azure Site Recovery | A migration and disaster    | Start of Pilot  |
+|                     | recovery tool for Azure.    | phase           |
+|                     | The source server operating |                 |
+|                     | system version must be      |                 |
+|                     | supported by Azure Site     |                 |
+|                     | Recovery as documented at   |                 |
+|                     | https://azure.mi            |                 |
+|                     | crosoft.com/en-us/documenta |                 |
+|                     | tion/articles/site-recovery |                 |
+|                     | -vmware-to-azure-classic/#b |                 |
+|                     | efore-you-start-deployment. |                 |
++---------------------+-----------------------------+-----------------+
+| Microsoft           | A no-cost, agentless        | Microsoft       |
+| Assessment and      | utility from Microsoft that | supplied,       |
+| Planning (MAP)      | is used to perform an       | deployed during |
+| Toolkit             | inventory of Windows Server | the Prepare     |
+|                     | environments.               | phase           |
++---------------------+-----------------------------+-----------------+
+| RiverMeadow         | A migration tool for Azure  | Microsoft       |
+|                     | IaaS and AVS. It supports   | supplied,       |
+|                     | automated operating system  | deployed at the |
+|                     | upgrades and post-migration | start of the    |
+|                     | script implementation. It   | Pilot phase     |
+|                     | is used as an alternative   |                 |
+|                     | to native Microsoft tools,  |                 |
+|                     | based upon migration        |                 |
+|                     | factory recommendations.    |                 |
++---------------------+-----------------------------+-----------------+
+| Web Deploy          | A no-cost tool used for     | Microsoft       |
+|                     | Microsoft Internet          | supplied,       |
+|                     | Information Services web    | deployed at the |
+|                     | applications during the     | start of the    |
+|                     | Planning and Migration      | Pilot phase     |
+|                     | phases.                     |                 |
++---------------------+-----------------------------+-----------------+
+| Windows Server      | The operating system        | Start of        |
+| 2012R2 or 2016      | required for discovery and  | engagement      |
+| Virtual Machine     | assessment tools.           |                 |
++---------------------+-----------------------------+-----------------+
+| Include the         |                             |                 |
+| following rows if   |                             |                 |
+| the AVS Migration   |                             |                 |
+| using VMware HCX is |                             |                 |
+| in scope for AMS    |                             |                 |
++---------------------+-----------------------------+-----------------+
+| VMware HCX          | VMware HCX is an            | Deployed during |
+| Enterprise          | application mobility        | the Prepare     |
+|                     | platform that is designed   | phase           |
+|                     | to simplify application     |                 |
+|                     | migration, workload         |                 |
+|                     | rebalancing, and business   |                 |
+|                     | continuity across data      |                 |
+|                     | centers and clouds.         |                 |
++---------------------+-----------------------------+-----------------+
+| Include the         |                             |                 |
+| following rows if   |                             |                 |
+| the Azure           |                             |                 |
+| Refactoring Service |                             |                 |
+| is in scope (ARS).  |                             |                 |
+| There is no funding |                             |                 |
+| for licenses in     |                             |                 |
+| FY23 so either the  |                             |                 |
+| local subsidiary    |                             |                 |
+| picks up the        |                             |                 |
+| licensing costs or  |                             |                 |
+| the customer will   |                             |                 |
+| have to. Choose     |                             |                 |
+| one.                |                             |                 |
++---------------------+-----------------------------+-----------------+
+| CAST Highlight      | A third-party tool that can | Microsoft |     |
+|                     | be used to analyze the      | Customer        |
+|                     | application source code and | supplied,       |
+|                     | identity components to be   | deployed at the |
+|                     | refactored.                 | start of the    |
+|                     |                             | Pilot phase     |
++---------------------+-----------------------------+-----------------+
+| Include the         |                             |                 |
+| following rows if   |                             |                 |
+| the Azure           |                             |                 |
+| Monitoring is in    |                             |                 |
+| scope (COG)         |                             |                 |
++---------------------+-----------------------------+-----------------+
+| Azure Monitor       | Azure native monitoring     | Start of Pilot  |
+|                     | capability available within | phase           |
+|                     | the Azure subscriptions.    |                 |
++---------------------+-----------------------------+-----------------+
+| Include the         |                             |                 |
+| following rows if   |                             |                 |
+| the Data Migration  |                             |                 |
+| service is in scope |                             |                 |
+| (DMS). There is no  |                             |                 |
+| funding for         |                             |                 |
+| licenses in FY23 so |                             |                 |
+| either the local    |                             |                 |
+| subsidiary picks up |                             |                 |
+| the licensing costs |                             |                 |
+| or the customer     |                             |                 |
+| will have to.       |                             |                 |
+| Choose one.         |                             |                 |
++---------------------+-----------------------------+-----------------+
+| Newt Global DMAP    | DMAP is a no-cost tool used | Microsoft |     |
+|                     | to assess and migrate       | Customer        |
+|                     | Oracle to PostgreSQL.       | supplied,       |
+|                     |                             | deployed at the |
+|                     | Due to the nature of the    | start of the    |
+|                     | licensing agreement for use | Pilot phase and |
+|                     | of the DMAP tool during     | used by         |
+|                     | Oracle migrations, only     | Microsoft       |
+|                     | Microsoft resources can use | resources only  |
+|                     | the tool to do the          |                 |
+|                     | assessments and migrations. |                 |
++---------------------+-----------------------------+-----------------+
+
+Environment requirements
+
+Add or remove the items from the table as needed for your engagement.
+The list of environments may differ by legal requirements and geography.
+If an environment is not required and is a customer’s responsibility,
+remove it from this table. Refer to the SOW writing guide for additional
+examples.
+
+All environments used for the development and delivery lifecycle will be
+supplied and maintained by the Customer. The Customer will provide the
+required Azure subscriptions and provide Microsoft with administrative
+control to build the development and test environments.
+
+Make sure you pick one responsible party for configuration and
+maintenance and one party has subscription ownership.
+
++------------+------------+---------------+------------+---------------+
+| E          | Location   | Responsible   | Su         | Ready by      |
+| nvironment |            | for           | bscription |               |
+|            |            | configuration | ownership  |               |
+|            |            | and           |            |               |
+|            |            | maintenance   |            |               |
++============+============+===============+============+===============+
+| Automation | Azure      | Microsoft or  | Customer   | Start of      |
+| e          | DevOps,    | Customer      |            | engagement    |
+| nvironment | GitHub     |               |            |               |
++------------+------------+---------------+------------+---------------+
+| D          | Specify    | Customer      | Customer   | Start of      |
+| evelopment | Azure      |               |            | engagement    |
+|            | regions    |               |            |               |
++------------+------------+---------------+------------+---------------+
+| Test       | Specify    | Customer      | Customer   | Start of      |
+|            | Azure      |               |            | engagement    |
+| For ARS,   | regions    |               |            |               |
+| ATS, DMS   |            |               |            |               |
++------------+------------+---------------+------------+---------------+
+| MAT        | Specify    | Customer      | Customer   | Start of      |
+|            | Azure      |               |            | engagement    |
+|            | regions    |               |            |               |
++------------+------------+---------------+------------+---------------+
+| Pre        | Specify    | Customer      | Customer   | Start of      |
+| production | Azure      |               |            | engagement    |
+|            | regions    |               |            |               |
+| For ARS,   |            |               |            |               |
+| ATS        |            |               |            |               |
++------------+------------+---------------+------------+---------------+
+| Production | Specify    | Customer      | Customer   | Start of      |
+|            | Azure      |               |            | engagement    |
+|            | regions    |               |            |               |
++------------+------------+---------------+------------+---------------+
+| Clean      | Specify    | Microsoft or  | Microsoft  | Start of      |
+| deployment | Azure      | Customer      | or         | engagement    |
+| lab        | region     |               | Customer   |               |
+|            |            |               |            |               |
+| For AMS    |            |               |            |               |
+| Clean      |            |               |            |               |
+| Deployment |            |               |            |               |
++------------+------------+---------------+------------+---------------+
+| Backup,    | Specify    | Customer      | Customer   | Start of      |
+| disaster   | Azure      |               |            | engagement    |
+| recovery   | regions    |               |            |               |
++------------+------------+---------------+------------+---------------+
+| Include    |            |               |            |               |
+| the        |            |               |            |               |
+| following  |            |               |            |               |
+| rows if    |            |               |            |               |
+| Clean      |            |               |            |               |
+| Source     |            |               |            |               |
+| Deployment |            |               |            |               |
+| is in      |            |               |            |               |
+| scope as   |            |               |            |               |
+| part of    |            |               |            |               |
+| PAW-CSM.   |            |               |            |               |
+| Also       |            |               |            |               |
+| include    |            |               |            |               |
+| the        |            |               |            |               |
+| customer   |            |               |            |               |
+| resp       |            |               |            |               |
+| onsibility |            |               |            |               |
+| sections   |            |               |            |               |
+| related to |            |               |            |               |
+| Secure     |            |               |            |               |
+| Room in    |            |               |            |               |
+| the        |            |               |            |               |
+| Customer   |            |               |            |               |
+| Respon     |            |               |            |               |
+| sibilities |            |               |            |               |
+| section    |            |               |            |               |
+| below.     |            |               |            |               |
++------------+------------+---------------+------------+---------------+
+| Secure     | Customer   | Customer      | Customer   | Start of      |
+| room       | facility   |               |            | engagement    |
++------------+------------+---------------+------------+---------------+
+| [Add       |            |               |            |               |
+| additional |            |               |            |               |
+| required   |            |               |            |               |
+| en         |            |               |            |               |
+| vironment] |            |               |            |               |
++------------+------------+---------------+------------+---------------+
+
+Customer dependencies
+
+In addition to Customer responsibilities outlined in the EDA, the
+Customer is responsible for the items noted in the following table..
+
++----------------------------------------------------------+-----------+
+| Responsibility or dependency                             | Ready by  |
++==========================================================+===========+
+| Application intake                                       | Ongoing   |
+|                                                          | during    |
+| On an ongoing basis, the Customer will include           | the Pilot |
+| sufficient applications in the pipeline, such that the   | and       |
+| number of applications planned to be included in each    | Migrate   |
+| migration wave can be achieved. Applications shall be    | phases    |
+| included in the pipeline at least 60 days prior to the   |           |
+| applicable migration wave month and shall include a      |           |
+| buffer so that applications eliminated in the migration  |           |
+| process do not cause Microsoft to have an insufficient   |           |
+| application count to meet its monthly migration target.  |           |
++----------------------------------------------------------+-----------+
+| Migration wave planning                                  | Ongoing   |
+|                                                          | during    |
+| On an ongoing basis, the Customer will collaborate with  | all       |
+| Microsoft on the migration wave planning and scheduling, | phases    |
+| taking into account holidays, vacations, and other       |           |
+| potential velocity obstacles.                            |           |
++----------------------------------------------------------+-----------+
+| Include only if Intake & Assessment scale teams          | Migrate   |
+| configured to be supplied by the customer in OSE.        | phase     |
+|                                                          | start     |
+| Intake and assessment                                    |           |
+|                                                          |           |
+| The Customer will staff <number of Scale teams from OSE> |           |
+| migration velocity scale teams in support of migration.  |           |
+| Each team will consist of a migration coordinator and    |           |
+| two migration subject matter experts (SMEs) to perform   |           |
+| intake/application disposition and assessment under the  |           |
+| governance of the Microsoft team. See Section 1.2.8,     |           |
+| Program organization addendum, for more details.         |           |
++----------------------------------------------------------+-----------+
+| Include section below if LOW effort for Cloud Operations | Ongoing   |
+| and Governance was identified in OSE. Choose the         | during    |
+| language that addresses the need of customer commitment. | the Pilot |
+|                                                          | and       |
+| COG                                                      | Migrate   |
+|                                                          | phases    |
+| The Customer needs only limited effort to achieve full   |           |
+| operational readiness because either (a) the Customer is |           |
+| already managing Azure workloads without issue, and      |           |
+| operations and governance are generally aligned to the   |           |
+| Microsoft Cloud Adoption Framework and using at least    |           |
+| some Azure native (or other cloud native) operational    |           |
+| tooling effectively; (b) the Customer has outsourced     |           |
+| these functions and needs only awareness and guidance so |           |
+| they can hold their supporting vendors accountable for   |           |
+| using recommended practices; or (c) the migration is     |           |
+| Azure VMware services-based, which limits the breadth of |           |
+| changes needed to be operationally ready. Microsoft will |           |
+| identify areas of risk and the Customer assumes the      |           |
+| responsibility for remediating the risks during the      |           |
+| Pilot and Migration phases.                              |           |
++----------------------------------------------------------+-----------+
+| Include section below if customer complexity is simple   | Prepare,  |
+| in OSE and People Mobilization for Velocity Services     | Pilot,    |
+| (PMVS).                                                  | Migrate   |
+|                                                          | Phase     |
+| The Customer has identified a team who will manage all   |           |
+| organizational change management needs for the migration |           |
+| of applications to Azure. This identified Customer team  |           |
+| will perform the duties to mobilize key stakeholders and |           |
+| will report to the Microsoft program team to engage with |           |
+| the relevant business and IT stakeholders to help make   |           |
+| sure that the pipeline is prepared with applications     |           |
+| ready to migrate to Azure. Microsoft will identify areas |           |
+| of risk and the Customer assumes the responsibility for  |           |
+| remediating risks during the migration phase.            |           |
++----------------------------------------------------------+-----------+
+| MAT                                                      | Ongoing.  |
+|                                                          | MAT       |
+| The Customer will perform functional, security, and      | schedules |
+| performance testing based on the migration or            | d         |
+| modernization strategy and requirements defined in the   | etermined |
+| Customer-provided test specification.                    | during    |
+|                                                          | product   |
+| AMS rapid application migration                          | baseline  |
+|                                                          | planning  |
+| MAT and cutover are a single event and will occur prior  |           |
+| to authorizing non-MAT users to access the servers.      |           |
+|                                                          |           |
+| AMS application migration                                |           |
+|                                                          |           |
+| MAT and cutover are a single event and will occur prior  |           |
+| to authorizing non-MAT users to access the application.  |           |
+| The Customer can perform “pre-MAT” in an isolated        |           |
+| environment if desired, prior to MAT and cutover.        |           |
+|                                                          |           |
+| AMS clean deployment                                     |           |
+|                                                          |           |
+| MAT will occur prior to the final cutover and prior to   |           |
+| granting non-MAT users access to the application.        |           |
+|                                                          |           |
+| ARS                                                      |           |
+|                                                          |           |
+| For each application, the Customer will conduct a MAT    |           |
+| test plan to verify the application operational state    |           |
+| post refactoring to Azure.                               |           |
+|                                                          |           |
+| ATS                                                      |           |
+|                                                          |           |
+| For each application, the Customer will conduct a MAT    |           |
+| test plan to verify the application operational state    |           |
+| post re-architecting or rebuilding to Azure.             |           |
+|                                                          |           |
+| Feedback from MAT (defect or additional user stories)    |           |
+| and other backlog items will be prioritized in the       |           |
+| product backlog.                                         |           |
+|                                                          |           |
+| DMS                                                      |           |
+|                                                          |           |
+| -   For each database, the Customer will conduct a MAT   |           |
+|     test plan to verify the database operational state   |           |
+|     post migration.                                      |           |
+|                                                          |           |
+| -   The Customer is responsible for providing access to  |           |
+|     production systems for the purposes of database      |           |
+|     backups and configuration of synchronization tools   |           |
+|     or the Customer must perform these activities        |           |
+|     directly.                                            |           |
+|                                                          |           |
+| -   Feedback from MAT (defect or additional user         |           |
+|     stories) and other backlog items will be prioritized |           |
+|     in the product backlog.                              |           |
++----------------------------------------------------------+-----------+
+| People mobilization for velocity service                 | N/A       |
+|                                                          |           |
+| The Customer is responsible for any change management    |           |
+| activities that target the users of migrated or          |           |
+| modernized applications and databases.                   |           |
++----------------------------------------------------------+-----------+
+| Organizational change management                         | N/A       |
+|                                                          |           |
+| -   Redesigning or re-engineering business processes.    |           |
+|                                                          |           |
+| -   Designing—or redesigning—the functional              |           |
+|     organization.                                        |           |
+|                                                          |           |
+| -   Branding—creating custom brand elements or branded   |           |
+|     materials.                                           |           |
+|                                                          |           |
+| -   Planning or undertaking user communications.         |           |
++----------------------------------------------------------+-----------+
+| Other general responsibilities                           | Ongoing   |
+|                                                          |           |
+| -   Monitor network activity.                            |           |
+|                                                          |           |
+| -   Provide application support.                         |           |
+|                                                          |           |
+| -   Fix bugs and troubleshoot problems related to        |           |
+|     applications or other third-party software, hardware |           |
+|     products, or applications that are not explicitly    |           |
+|     mentioned as being in scope.                         |           |
+|                                                          |           |
+| -   Prepare documentation about processes, standards,    |           |
+|     policies, or existing guidelines.                    |           |
+|                                                          |           |
+| -   Design, configure, integrate, deploy, or fix issues  |           |
+|     in commercially available third-party software.      |           |
+|                                                          |           |
+| -   Take responsibility for modifications to third-party |           |
+|     systems and external interfaces to support           |           |
+|     integration.                                         |           |
+|                                                          |           |
+| -   Plan, design, customize, enhance, troubleshoot, and  |           |
+|     resolve problems that are related to, but not        |           |
+|     limited to, supporting the on-premises               |           |
+|     infrastructure listed here:                          |           |
+|                                                          |           |
+|     -   Firewalls                                        |           |
+|                                                          |           |
+|     -   Storage area networks                            |           |
+|                                                          |           |
+|     -   Routing and switching devices.                   |           |
+|                                                          |           |
+| -   Coordinate across IT and Customer business units to  |           |
+|     prioritize the Azure migration program.              |           |
+|                                                          |           |
+| -   Identify and assign project resources.               |           |
+|                                                          |           |
+| -   Identify and prioritize the applications for         |           |
+|     migration.                                           |           |
+|                                                          |           |
+| -   Maintain an adequate backlog of qualified            |           |
+|     applications to sustain migration velocity for       |           |
+|     improved utilization of the available capacity.      |           |
++----------------------------------------------------------+-----------+
+
+Program organization addendum
+
+Generally, this section will not be used. However, this section can be
+used if there are unique roles which are not already covered in the EDA
+which must be defined in the contract. Delete this section if not used.
+
+The following is a list of roles specific to the engagement, in addition
+to those described in the EDA.
+
++------------+----------------------------------------+---------------+
+| Role       | Responsibilities                       | Responsible   |
+|            |                                        | party         |
++============+========================================+===============+
+| Include    |                                        |               |
+| the        |                                        |               |
+| following  |                                        |               |
+| two roles  |                                        |               |
+| only if    |                                        |               |
+| AMS scale  |                                        |               |
+| teams      |                                        |               |
+| configured |                                        |               |
+| to be      |                                        |               |
+| supplied   |                                        |               |
+| by the     |                                        |               |
+| customer   |                                        |               |
+| in OSE.    |                                        |               |
++------------+----------------------------------------+---------------+
+| Migration  | -   Function as a Customer advocate    | Customer      |
+| c          |     with Customer application support  |               |
+| oordinator |     teams.                             |               |
+|            |                                        |               |
+|            | -   Maintain a velocity plan for       |               |
+|            |     assessments, planning, and         |               |
+|            |     migrations.                        |               |
+|            |                                        |               |
+|            | -   Build a migration wave plan and    |               |
+|            |     maintain a migration calendar.     |               |
+|            |                                        |               |
+|            | -   Verify ownership of servers and    |               |
+|            |     applications that reside on those  |               |
+|            |     servers; follow up for data        |               |
+|            |     quality issues.                    |               |
+|            |                                        |               |
+|            | -   Work with application teams and    |               |
+|            |     migration consultants to classify  |               |
+|            |     servers into an assessment         |               |
+|            |     disposition.                       |               |
+|            |                                        |               |
+|            | -   Organize and facilitate assessment |               |
+|            |     and planning meetings; update the  |               |
+|            |     migration catalog with notes; make |               |
+|            |     sure that follow-up activities are |               |
+|            |     tracked and escalated on a timely  |               |
+|            |     basis.                             |               |
+|            |                                        |               |
+|            | -   Verify data quality and Power BI   |               |
+|            |     reports.                           |               |
+|            |                                        |               |
+|            | -   Distribute, track, and collect     |               |
+|            |     deliverable acceptance forms.      |               |
++------------+----------------------------------------+---------------+
+| Intake and | -   Assist with the deployment and     | Customer      |
+| assessment |     configuration of program tools.    |               |
+| SME        |                                        |               |
+|            | -   Coordinate MAT.                    |               |
+|            |                                        |               |
+|            | -   Coordinate migration factory       |               |
+|            |     activities.                        |               |
+|            |                                        |               |
+|            | -   Deliver factory progress reporting |               |
+|            |     and metrics.                       |               |
+|            |                                        |               |
+|            | -   Work with business and technical   |               |
+|            |     owners to group migration catalog  |               |
+|            |     components (such as servers,       |               |
+|            |     applications, and databases) into  |               |
+|            |     application collections.           |               |
+|            |                                        |               |
+|            | -   Collect data through Customer      |               |
+|            |     interviews.                        |               |
+|            |                                        |               |
+|            | -   Drive test specification           |               |
+|            |     validation with application        |               |
+|            |     support teams.                     |               |
++------------+----------------------------------------+---------------+

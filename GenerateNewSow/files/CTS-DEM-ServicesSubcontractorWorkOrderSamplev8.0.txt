@@ -1,0 +1,259 @@
+Microsoft Services Subcontractor Work Order
+
++----------------------------------+-----------------------------------+
+| (Microsoft Affiliate to          |                                   |
+| complete)                        |                                   |
+|                                  |                                   |
+| Subcontractor Work Order number  |                                   |
++==================================+===================================+
++----------------------------------+-----------------------------------+
+
+During deal creation, download the latest Services Subcontractor Work
+Order for your specific country and use this sample to update the
+content (example sections 1.2 and 1.3 subheading Payment). Place it in
+the C1 deal record when the Partner Migration Coordinator role exists.
+The name of the Subcontractor does not have to be finalized in the
+subcontractor work order at deal creation; instead this will be used by
+the Resource Manager to staff the appropriate partner resource once the
+Cloud Transition Services / Data Estate Modernization project manager
+requests resourcing to onboard an Azure Migration Service Velocity
+Migration Team in delivery.
+
+This Work Order is made pursuant to the Microsoft Services Subcontractor
+Agreement (the “Agreement”) [insert reference], effective as of [insert
+date] by and between the undersigned Contractor (“Contractor”, “you”,
+“your”) and the Microsoft affiliate (“Microsoft”, “we”, “us”, “our”).
+The terms of the Agreement are incorporated by this reference and any
+terms undefined in this Work Order have the definitions in the
+Agreement.
+
+  ----------------------------------- -----------------------------------
+  Contractor                          Microsoft affiliate
+
+  Name of Contractor (please print)   Name
+
+  Signature                           Signature
+
+  Name of person signing (please      Name of person signing (please
+  print)                              print)
+
+  Title of person signing (please     Title of person signing (please
+  print)                              print)
+
+  Signature date                      Signature date
+  ----------------------------------- -----------------------------------
+
+Services and Fees
+
+Term
+
+This Work Order will commence on [insert date] or the date the
+Contractor begins providing the services, whichever is earlier. This
+Work Order will expire on [insert date] or later, if mutually agreed by
+the parties in writing.
+
+Description of the Work
+
+Contractor will augment the Microsoft Services team and execute the
+following tasks at the direction of the Microsoft Project Manager for
+the following Microsoft Customer, [insert name of Customer]
+
+Contractor will perform the Work described below:
+
++----------------+-----------------------------------------------------+
+| Work: Insert   |                                                     |
+| project title  |                                                     |
++----------------+-----------------------------------------------------+
+| Project Role   | Migration Coordindator                              |
+| Title          |                                                     |
++----------------+-----------------------------------------------------+
+| Role           | -   Develops and maintains velocity migration plan  |
+| expectations   |     for assessment, planning, and migration         |
+|                |     activities.                                     |
+|                |                                                     |
+|                | -   Maintains migration calendar and builds         |
+|                |     migration wave plan.                            |
+|                |                                                     |
+|                | -   Verifies ownership of servers and apps that     |
+|                |     reside on those servers, follows up for data    |
+|                |     quality issues.                                 |
+|                |                                                     |
+|                | -   Organizes and facilitates assessment and        |
+|                |     planning meetings.                              |
+|                |                                                     |
+|                | -   Updates the migration catalog with notes from   |
+|                |     assessment and planning meetings.               |
+|                |                                                     |
+|                | -   Ensures that meeting follow ups are tracked and |
+|                |     escalated on a timely basis.                    |
+|                |                                                     |
+|                | -   Works with Customer Application Owners and      |
+|                |     Microsoft Migration Consultants to assign the   |
+|                |     appropriate migration strategy to applications  |
+|                |     and servers.                                    |
+|                |                                                     |
+|                | -   Verifies data quality and Power BI reports.     |
+|                |     Escalates reporting issues to Microsoft for     |
+|                |     resolution.                                     |
+|                |                                                     |
+|                | -   Reviews, distributes, tracks, and collects      |
+|                |     deliverable acceptance on Migration Plans and   |
+|                |     Deployment Plan deliverables, as appropriate.   |
++----------------+-----------------------------------------------------+
+| Personal       | Strong analytical skills, polished in front of      |
+| Attributes     | customers, familiar with server migrations and data |
+|                | center operations, clean grammar, and good listener |
++----------------+-----------------------------------------------------+
+| Key tools      | Excel, Word, and Outlook                            |
++----------------+-----------------------------------------------------+
+| Prior          | Participated in data center migrations or IT        |
+| experience     | Operations, Power BI, Excel power user, basic SQL   |
+|                | queries                                             |
++----------------+-----------------------------------------------------+
+
+Payment
+
+Microsoft agrees to pay Contractor for the Work completed, delivered and
+accepted by Microsoft and Customer under this Work Order.
+
+Expenses
+
+Select the correct option for expenses.
+
+Option 1- no Contractor expenses
+
+Contractor will be solely responsible for all expenses incurred while
+performing the Work, unless Microsoft otherwise consents, in writing and
+in advance of expense being incurred.
+
+Option 2- Contractor expenses, detail the not to exceed amount on the
+expenses line in payment table
+
+Microsoft will reimburse Supplier up to the expenses detailed below.
+Supplier must submit appropriate documentation evidencing the expenses
+to be reimbursed before payment will be made.
+
+Payment
+
+Contractor shall invoice Microsoft monthly for Work performed.
+
+Define the number of resources and hours per resource estimated.
+
+  --------------------------- -------------- -------------- --------------
+  Services (specify role)     Hourly/Daily   Quantity       Total
+                              Rate                          
+
+  Migration Coordinator 1                                   
+
+  Migration Coordinator 2                                   
+
+  Migration Coordinator 3                                   
+
+  Migration Coordinator 4                                   
+
+  Sub-total                                                 
+
+  Expenses                                                  
+
+  Total: Not to exceed                                      
+  (excluding taxes)                                         
+  --------------------------- -------------- -------------- --------------
+
+Additional terms
+
+a.  No Contractor retained work. The Parties agree that the Work is not
+    comprised of any Contractor Retained Work.
+
+b.  Contractor employees. Employees and Subcontractors of Contractor
+    will be assigned to perform the Work under this Work Order, and will
+    not be removed by Contractor, except for i) such employees’ or
+    Subcontractor’s termination, resignation or other causes beyond
+    Contractor’s reasonable control; or ii) upon Microsoft’s request
+    that such employees or Subcontractors be removed. In such
+    circumstances, Contractor must supply a suitable replacement for
+    such employees or Subcontractors, reasonably acceptable by
+    Microsoft, as soon as possible at no additional expense to
+    Microsoft. Subcontractors of Contractor must be approved by
+    Microsoft, in writing, prior to performing Work under this Work
+    Order.
+
+c.  For Online Services related projects, Contractor agrees to support
+    the association of Customer’s Online Services with Microsoft
+    Consulting Services through configuration of the Customer’s
+    subscription or Azure resources and provide required information,
+    upon Microsoft’s request, about impacted subscriptions, workloads
+    and apps.
+
+    Delete this section if Subcontractor has MSSA version 3.0 or later.
+
+a.  Acceptable Use
+
+    Microsoft requires its Customers to comply with certain terms and
+    conditions related to acceptable use of its technologies, and
+    therefore, Microsoft will not design products and services in ways
+    that Customer can use contrary to such acceptable use. Contractor
+    acknowledges and agrees that it will not provide the Work to
+    Microsoft:
+
+    (i) in a way prohibited by law, regulation, governmental order or
+    decree;
+
+    (ii) in a form that could be used to violate the rights of others;
+
+    (iii) in a form that could be used to try to gain unauthorized
+    access to or disrupt any service, device, data, account or network;
+
+    (iv) in a form that could be used to spam or distribute malware;
+
+    (v) in a way that could harm Microsoft’s or Customer’s IT systems or
+    impair anyone else’s use of them;
+
+    (vi) in any application or situation where use of the Work could
+    lead to the death or serious bodily injury of any person, or to
+    severe physical or environmental damage; or
+
+    (vii) in a form that could assist or encourage anyone to do any of
+    the above.
+
+Delete this section if no customer or Contractor terms. Any change to
+this section requires SBD Contracts review. Consider the following, if
+you want to name any specific Contractor staff that must be retained,
+any additional customer terms, retained rights, customer confidentiality
+requirements, customer screening requirements etc.
+
+a.  Additional Customer terms. Contractor agrees to the following terms:
+
+Invoicing terms
+
+a.  Frequency of invoice. Invoice must be submitted in accordance with
+    the payment schedule and all invoices must be submitted within 30
+    calendar days of the close of the engagement.
+
+a.  Invoice details. The invoice submission must include; details of
+    invoiced hours, hourly rate and expenses (broken down by resource,
+    by day), the Microsoft purchase order number and the name of the
+    Contractor.
+
+b.  Microsoft payment. Microsoft will pay Contractor all undisputed
+    amounts, within thirty calendar (30) days of Microsoft’s receipt of
+    a complete and accurate invoice that includes a description of
+    services, or other supporting evidence that Contractor delivered the
+    Work during the invoice period for all Work accepted by Microsoft.
+    If Contractor’s Employee or Subcontractor have recorded less time
+    than 1/2 of the expected business days in a calendar month, the
+    monthly payment will be capped to the actual working days.
+
+c.  Time and expense reporting. For time and materials engagements,
+    unless authorized by Microsoft, each person provided by Contractor
+    under this Work Order must submit time daily, no later than 23:59
+    local time. Where Microsoft has pre-approved expenses, these must be
+    submitted within 10 business days of expense being incurred. Time
+    and expenses must be submitted into Microsoft’s timekeeping system
+    of record, or if authorized by Microsoft, via email to the
+    designated Microsoft contact. To access Microsoft’s timekeeping
+    system of record, Contractor shall be responsible for obtaining for
+    each person an account from Microsoft.
+
+d.  Accuracy of invoice. If submitted invoice does not match the time
+    and expense entries provided to Microsoft, they will be rejected for
+    payment.
