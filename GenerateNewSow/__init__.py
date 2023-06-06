@@ -31,7 +31,7 @@ AZURE_OPENAI_SERVICE = os.environ.get("AZURE_OPENAI_SERVICE") or "openai-sow2" #
 AZURE_OPENAI_GPT_DEPLOYMENT = os.environ.get("AZURE_OPENAI_GPT_DEPLOYMENT") or "text-davinci-003"
 AZURE_OPENAI_CHATGPT_DEPLOYMENT = os.environ.get("AZURE_OPENAI_CHATGPT_DEPLOYMENT") or "gpt-35-turbo"
 
-OPENAI_API_KEY = os.environ.get("OpenAI_API_Key")
+OPENAI_API_KEY = os.environ.get["OpenAI_API_Key"]
 #OPENAI_API_KEY = "93a83e3140f64d3285afbae12f50ac9d" #1st "e1901bf96dd14e6eaad93bef54a8bb94"
 
 KB_FIELDS_CONTENT = os.environ.get("KB_FIELDS_CONTENT") or "content"
