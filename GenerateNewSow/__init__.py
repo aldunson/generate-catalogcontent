@@ -22,7 +22,9 @@ from azure.search.documents import SearchClient
 from azure.search.documents.models import QueryType
 
 # Replace these with your own values, either in environment variables or directly here
-AZURE_STORAGE_CONNECTIONSTRING = os.environ.get("AZURE_STORAGE_CONNECTION") or "DefaultEndpointsProtocol=https;AccountName=sowcataloguestorage;AccountKey=8A9jND/GAcL73dSGodJaQ4AiCIKZ+IQSNyggDxlp3LB0uWdscUabg0Bp6+MonXdvEOkbtTvq+z2f+AStKRsJOw==;EndpointSuffix=core.windows.net"
+#Changed
+#AZURE_STORAGE_CONNECTIONSTRING = os.environ.get("AZURE_STORAGE_CONNECTION") or "DefaultEndpointsProtocol=https;AccountName=sowcataloguestorage;AccountKey=8A9jND/GAcL73dSGodJaQ4AiCIKZ+IQSNyggDxlp3LB0uWdscUabg0Bp6+MonXdvEOkbtTvq+z2f+AStKRsJOw==;EndpointSuffix=core.windows.net"
+AZURE_STORAGE_CONNECTIONSTRING = os.environ["AZURE_STORAGE_CONNECTIONSTRING"]
 AZURE_STORAGE_ACCOUNT = os.environ.get("AZURE_STORAGE_ACCOUNT") or "sowcataloguestorage"
 AZURE_STORAGE_CONTAINER = os.environ.get("AZURE_STORAGE_CONTAINER") or "sow-generated"
 AZURE_SEARCH_SERVICE = os.environ.get("AZURE_SEARCH_SERVICE") or "sow-search-service"
@@ -31,6 +33,7 @@ AZURE_OPENAI_SERVICE = os.environ.get("AZURE_OPENAI_SERVICE") or "openai-sow2" #
 AZURE_OPENAI_GPT_DEPLOYMENT = os.environ.get("AZURE_OPENAI_GPT_DEPLOYMENT") or "text-davinci-003"
 AZURE_OPENAI_CHATGPT_DEPLOYMENT = os.environ.get("AZURE_OPENAI_CHATGPT_DEPLOYMENT") or "gpt-35-turbo"
 
+#Changed
 OPENAI_API_KEY = os.environ["OpenAI_API_Key"]
 #OPENAI_API_KEY = "93a83e3140f64d3285afbae12f50ac9d" #1st "e1901bf96dd14e6eaad93bef54a8bb94"
 
@@ -42,8 +45,13 @@ KB_FIELDS_SOURCEPAGE = os.environ.get("KB_FIELDS_SOURCEPAGE") or "sourcepage"
 # just use 'az login' locally, and managed identity when deployed on Azure). If you need to use keys, use separate AzureKeyCredential instances with the 
 # keys for each service
 #azure_credential = DefaultAzureCredential()
-AZURE_CREDENTIAL_SEARCH = AzureKeyCredential("IkfQqdPvevny2N2HURKH0jVQi68SsZMq8H1We1xte0AzSeC2kYQf")
-AZURE_CREDENTIAL_STORAGE = AzureKeyCredential("YI0tUV/AYZr8hFVxB6syqcBTNiO6DfoDlMLiiYCrMGr3YaXe/aHhGrSHRC6Ad9hkxzKkhQ3IY27K+AStCHEG7Q==")
+# Changed
+AZURE_CREDENTIAL_SEARCH_KEY = os.environ["AZURE_CREDENTIAL_SEARCH_KEY"]
+AZURE_CREDENTIAL_STORAGE_KEY = os.environ["AZURE_CREDENTIAL_STORAGE_KEY"]
+AZURE_CREDENTIAL_SEARCH = AzureKeyCredential(AZURE_CREDENTIAL_SEARCH_KEY)
+AZURE_CREDENTIAL_STORAGE = AzureKeyCredential(AZURE_CREDENTIAL_STORAGE_KEY)
+#AZURE_CREDENTIAL_SEARCH = AzureKeyCredential("IkfQqdPvevny2N2HURKH0jVQi68SsZMq8H1We1xte0AzSeC2kYQf")
+#AZURE_CREDENTIAL_STORAGE = AzureKeyCredential("YI0tUV/AYZr8hFVxB6syqcBTNiO6DfoDlMLiiYCrMGr3YaXe/aHhGrSHRC6Ad9hkxzKkhQ3IY27K+AStCHEG7Q==")
 
 EMBEDDING_MODEL = 'text-embedding-ada-002'
 EMBEDDING_CTX_LENGTH = 8191
